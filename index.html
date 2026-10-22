@@ -128,7 +128,7 @@ footer{padding:clamp(48px,7vw,88px) 0 40px}
 .tag::before{content:"✦︎ ";color:#E08AA3}.cv h3{letter-spacing:.01em}.cover{box-shadow:inset 0 -28px 36px -30px rgba(94,26,46,.35)}
 .logo{font:italic 400 30px/1 "Instrument Serif",Georgia,serif;letter-spacing:0;color:var(--rose);-webkit-text-stroke:.5px var(--rose)}
 @keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(14deg)}}
-.st{animation:fl 5s ease-in-out infinite}.s2{animation-duration:6.2s;animation-delay:-1.5s}.s3{animation-duration:4.6s;animation-delay:-3s}.s4{animation-duration:5.8s;animation-delay:-2s}
+.st{animation:fl 8s ease-in-out infinite}.s2{animation-duration:6.2s;animation-delay:-1.5s}.s3{animation-duration:4.6s;animation-delay:-3s}.s4{animation-duration:5.8s;animation-delay:-2s}
 /* casos: detalhes ao passar o mouse */
 .pcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .pc{position:relative;border-radius:28px;overflow:hidden;background:#2A0E17;color:#FFEDEB;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-width:0;border:1px solid rgba(242,184,198,.2)}
@@ -220,14 +220,14 @@ html{overflow-x:hidden}
 .pc .ov .bt{margin-top:10px}
 @media(hover:hover) and (min-width:901px) and (max-width:1100px){.pc .ov{padding:14px 18px;gap:4px}.pc dl.mt{padding:8px 0;gap:5px}.pc .ov>p:not(.fo){font-size:13px;line-height:1.4}.pc .ov .bt{margin-top:6px}}
 /* movimento sutil (respeita prefers-reduced-motion) */
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity 1.4s cubic-bezier(.2,.7,.2,1),transform 1.4s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
-.c,.box,.pc,.btn,.pill,.pills li{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,background-color .3s,border-color .3s}
-@media(hover:hover){.c:hover,.box:hover{transform:translateY(-4px)}.pc:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}.btn:hover{transform:translateY(-2px)}.pills li:hover{transform:translateY(-2px);border-color:rgba(242,184,198,.6)}.ai{transition:transform .3s}.btn:hover .ai,.pl:hover .ai{transform:translate(2px,-2px)}}
+.c,.box,.pc,.btn,.pill,.pills li{transition:transform .7s cubic-bezier(.2,.7,.2,1),box-shadow .7s,background-color .6s,border-color .6s}
+@media(hover:hover){.tl>.c:hover,#time .c:hover{transform:translateY(-4px)}.pc:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}.btn:hover{transform:translateY(-2px)}.pills li:hover{transform:translateY(-2px);border-color:rgba(242,184,198,.6)}.ai{transition:transform .6s}.btn:hover .ai,.pl:hover .ai{transform:translate(2px,-2px)}}
 @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-14px)}}
-.cb::before{animation:drift 14s ease-in-out infinite}
+.cb::before{animation:drift 26s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(120,230,160,.45)}60%{box-shadow:0 0 0 7px rgba(120,230,160,0)}}
-.cb .dot,.avail i{animation:pulse 2.6s ease-out infinite}
+.cb .dot,.avail i{animation:pulse 4.5s ease-out infinite}
 </style>
 </head>
 <body>
@@ -304,9 +304,9 @@ html{overflow-x:hidden}
 (function(){try{document.documentElement.classList.add('js');
 var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 var els=[].slice.call(document.querySelectorAll('section>h2,section>.lead,.facts>*,.ab>.box,.tl>.c,.cards>.c,.pcs>.pc,.ux>*,.cb'));
-els.forEach(function(e,i){e.classList.add('rv');var sib=[].indexOf.call(e.parentNode.children,e);e.style.setProperty('--d',Math.min(sib,5)*.08+'s')});
+els.forEach(function(e,i){e.classList.add('rv');var sib=[].indexOf.call(e.parentNode.children,e);e.style.setProperty('--d',Math.min(sib,5)*.15+'s')});
 if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var t=x.target;t.classList.add('in');io.unobserve(t);setTimeout(function(){t.classList.remove('rv','in');t.style.removeProperty('--d')},1400)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var t=x.target;t.classList.add('in');io.unobserve(t);setTimeout(function(){t.classList.remove('rv','in');t.style.removeProperty('--d')},2600)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
 els.forEach(function(e){io.observe(e)});
 }catch(e){document.documentElement.classList.remove('js')}})();
 </script>
