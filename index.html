@@ -11,7 +11,7 @@
 :root{--bg:#1B0910;--band:#3A0F20;--card:#45142A;--line:rgba(242,184,198,.22);--ink:#FFEDEB;--mut:#D9ADB8;--rose:#F2B8C6;--pink:#EDA9BB;--soft:#F8D9DF;--peach:#FDE4DD;--wine:#5E1A2E;--dk:#2A0E17}
 *{box-sizing:border-box}
 html{scroll-behavior:auto;scroll-padding-top:90px}
-body{margin:0;background:radial-gradient(1000px 600px at 15% 4%,rgba(168,52,92,.46),transparent 70%),radial-gradient(760px 560px at 85% 22%,rgba(242,184,198,.2),transparent 68%),radial-gradient(600px 400px at 50% 48%,rgba(94,26,46,.35),transparent 70%),var(--bg);background-repeat:no-repeat;color:var(--ink);font:400 16px/1.55 "DM Sans",system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+body{margin:0;background:radial-gradient(1000px 600px at 15% 4%,rgba(168,52,92,.46),transparent 70%),radial-gradient(760px 560px at 85% 22%,rgba(242,184,198,.2),transparent 68%),radial-gradient(600px 400px at 50% 48%,rgba(94,26,46,.35),transparent 70%),var(--bg);background-repeat:no-repeat;color:var(--ink);font:400 16px/1.55 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 h1,h2,h3,h4,p{margin-top:0}
 .w{width:min(1080px,100% - 32px);margin-inline:auto}
@@ -151,7 +151,7 @@ footer{padding:clamp(48px,7vw,88px) 0 40px}
 @media(max-width:480px){.facts{grid-template-columns:minmax(0,1fr)}.nav{padding-left:16px}.btn.sm span{display:none}.cb .bts .btn,.bt .pill{flex:1 1 auto;justify-content:center}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* responsivo */
-html{overflow-x:clip}
+html{overflow-x:hidden}
 .logo,.nav ul a{display:inline-flex;align-items:center;min-height:44px}
 .nav ul a{padding:0 16px}
 .btn.sm{min-height:44px}
@@ -182,6 +182,18 @@ html{overflow-x:clip}
 .hero{justify-items:stretch}
 }
 @media(max-width:480px){.pc .bt .pl{flex:1 1 100%}.cb h2{font-size:clamp(34px,10vw,44px)}.cb h2::after{font-size:.3em}}
+/* hero: hierarquia e respiro */
+@media(max-width:900px){
+.hero .nm{font-size:clamp(34px,9.5vw,56px);line-height:1.2;margin:0 0 6px}
+.hero h1{font-size:clamp(68px,21vw,132px);line-height:.96;margin:0 0 22px}
+.hero p{font-size:17px;max-width:46ch}
+}
+@media(min-width:640px) and (max-width:900px){
+.hero{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:28px}
+.ph{order:0;width:min(300px,100%);justify-self:center}
+.hero h1{font-size:clamp(72px,13vw,110px)}
+}
+.logo{white-space:nowrap}@media(max-width:360px){.logo{font-size:21px}.nav{padding-left:12px}.nav ul a{padding:0 5px}}
 </style>
 </head>
 <body>
