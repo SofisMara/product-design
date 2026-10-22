@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sofia Mara · Product Designer</title>
+<meta name="description" content="Portfólio de Sofia Mara, Product Designer em São Paulo: produtos digitais de iGaming, fintech e e-commerce, da descoberta ao handoff.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1B0910;--band:#3A0F20;--card:#45142A;--line:rgba(242,184,198,.22);--ink:#FFEDEB;--mut:#D9ADB8;--rose:#F2B8C6;--pink:#EDA9BB;--soft:#F8D9DF;--peach:#FDE4DD;--wine:#5E1A2E;--dk:#2A0E17}
+*{box-sizing:border-box}
+html{scroll-behavior:auto;scroll-padding-top:90px}
+body{margin:0;background:radial-gradient(1000px 600px at 15% 4%,rgba(168,52,92,.46),transparent 70%),radial-gradient(760px 560px at 85% 22%,rgba(242,184,198,.2),transparent 68%),radial-gradient(600px 400px at 50% 48%,rgba(94,26,46,.35),transparent 70%),var(--bg);background-repeat:no-repeat;color:var(--ink);font:400 16px/1.55 "DM Sans",system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3,h4,p{margin-top:0}
+.w{width:min(1080px,100% - 32px);margin-inline:auto}
+.it{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
+.d{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.98}
+.g{background-image:linear-gradient(95deg,#F9B3C4,#FFC9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
+:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:8px}
+/* nav */
+.bar{position:sticky;top:0;z-index:20;padding:12px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(32,10,20,.88);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:99px;padding:8px 8px 8px 22px}
+.logo{font:400 18px Anton,sans-serif;letter-spacing:.04em;text-decoration:none;color:var(--rose)}
+.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;padding:8px 16px;border-radius:99px;text-decoration:none;color:var(--mut);font-size:15px}
+.nav ul a:hover,.nav ul a.on{color:var(--ink);background:rgba(242,184,198,.14)}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:99px;background:var(--rose);color:var(--dk);font:500 16px "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:#F8CBD6}
+.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}.btn.ghost:hover{background:rgba(242,184,198,.12)}
+.btn i,.pill i{font-style:normal}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:32px;align-items:center;padding:36px 0 28px}
+.chip{display:inline-block;background:rgba(242,184,198,.12);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:14px;color:var(--rose);margin-bottom:14px}
+.hero .nm{font-size:clamp(40px,6vw,72px);line-height:1;margin:0 0 -6px;display:block}
+.hero h1{font-size:clamp(52px,9vw,120px);margin:0 0 22px}
+.hero p{max-width:50ch;color:var(--ink);opacity:.92;font-size:clamp(16px,1.6vw,18px);margin-bottom:26px}
+.ph{position:relative;justify-self:center;width:min(320px,100%)}
+.ph .cap{display:block;text-align:right;color:var(--mut);font-size:15px;margin-bottom:10px}
+.ph .pic{border-radius:36px;aspect-ratio:4/5;overflow:hidden;border:2px solid rgba(242,184,198,.45)}
+.ph::before{content:"";position:absolute;inset:14% -14% -8% -14%;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,rgba(248,190,205,.5),rgba(242,184,198,.12) 70%,transparent);filter:blur(30px)}.ph{isolation:isolate}.ph .pic{box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%;border-radius:36px}
+.ph .t{position:absolute;background:#2A0E17;color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:500}
+.st{position:absolute;color:var(--rose);line-height:1}.s1{left:-22px;top:56px;font-size:34px}.s2{right:-16px;top:34%;font-size:22px}.s3{left:-12px;bottom:70px;font-size:20px}.s4{right:10px;bottom:-14px;font-size:30px}
+.t1{left:-18px;top:70px;rotate:-6deg}.t2{right:-14px;top:42%;rotate:5deg}.t3{left:-10px;bottom:46px;rotate:-4deg}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:26px 0 8px}
+.facts>div{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;display:grid;gap:4px;align-content:start}
+.facts small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--rose)}
+.facts b{font-weight:600;font-size:17px;line-height:1.3}
+.facts span{font-size:14px;color:var(--mut)}
+/* sections */
+section{padding:clamp(48px,7vw,88px) 0 0}
+.h2{font-size:clamp(40px,6vw,72px);margin:0 0 10px}
+.h2 .it{font-size:1.06em;text-transform:none;color:var(--pink)}
+.lead{color:var(--mut);max-width:60ch;margin:0 0 30px}
+.ab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:start}
+.box{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,3vw,32px)}
+.box h3{font:600 clamp(22px,2.4vw,26px)/1.2 "DM Sans",sans-serif;margin-bottom:14px}
+.box p{color:var(--ink);opacity:.92;margin-bottom:14px}.box p:last-child{margin-bottom:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.pills li{border:1px solid var(--line);background:rgba(242,184,198,.08);border-radius:99px;padding:6px 14px;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.c{border-radius:24px;padding:24px;display:grid;gap:8px;align-content:start;min-height:170px}
+.c h3{font:600 20px/1.25 "DM Sans",sans-serif;margin:0}
+.c p{margin:0;font-size:15px}
+.c.dk{background:var(--card);border:1px solid var(--line);color:var(--ink)}.c.dk h3{color:var(--rose)}.c.dk p{color:var(--ink);opacity:.9}
+.c.pk{background:var(--pink);color:var(--dk)}.c.sf{background:var(--soft);color:var(--dk)}.c.pe{background:var(--peach);color:var(--dk)}
+.c.pk h3,.c.sf h3,.c.pe h3{color:var(--wine)}
+.cards .c{position:relative;overflow:hidden;isolation:isolate;border-radius:34px 22px 38px 22px}
+.cards .c:nth-child(even){border-radius:22px 38px 22px 34px}
+.cards .c::before{content:"";position:absolute;z-index:-1;width:150px;height:130px;right:-34px;bottom:-40px;border-radius:62% 38% 55% 45%/48% 58% 42% 52%;background:rgba(242,184,198,.1);filter:blur(10px)}
+.cards .c:nth-child(even)::before{right:auto;left:-40px;top:-46px;bottom:auto;border-radius:45% 55% 38% 62%/58% 42% 58% 42%;width:130px;height:120px}
+.cards .c.pe::before,.cards .c.sf::before{background:rgba(242,184,198,.45)}
+.cards .c.pk::before{background:rgba(255,241,238,.35)}
+/* casos */
+.band{background:var(--band);margin-top:clamp(56px,8vw,96px);padding:clamp(48px,7vw,80px) 0}
+.band section{padding:0}
+.cvs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.cv{background:var(--peach);color:var(--dk);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.cover{display:block;aspect-ratio:3/2;background:var(--pink);position:relative;overflow:hidden;text-decoration:none}
+.cover img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}.cv[data-k=ajx] .cover img.real{object-position:left center}
+.cv{box-shadow:0 18px 40px rgba(0,0,0,.28);border:1px solid rgba(94,26,46,.12)}.cover{border-bottom:4px solid var(--rose)}.cv .in{padding:24px 26px 28px}
+.in{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#B23A5C;font-weight:600}
+.cv h3{font:400 clamp(24px,2.6vw,30px)/1 Anton,sans-serif;text-transform:uppercase;margin:0}
+.cv h4{font:600 17px/1.3 "DM Sans",sans-serif;margin:2px 0 4px}
+.cv p{margin:0 0 6px;font-size:15px;color:#5C3340}.cv p.f{font-size:14px}
+.cv p.f b{color:var(--wine)}
+.bt{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:14px}
+.pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:99px;background:var(--wine);color:#FFF1EE;font:500 15px "DM Sans",sans-serif;text-decoration:none}
+.pill:hover{background:#7A2440}.pill.alt{background:var(--soft);color:var(--wine)}.pill.alt:hover{background:var(--rose)}
+/* mockups in covers */
+.mk{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;gap:14px;padding:22px 22px 0}
+.br{width:100%;max-width:330px;background:#fff;border-radius:14px 14px 0 0;overflow:hidden;box-shadow:0 10px 26px rgba(94,26,46,.2)}
+.br .tb{display:flex;gap:5px;background:#F6DCE2;padding:9px 12px}.br .tb i{width:8px;height:8px;border-radius:50%;background:#E3AFBC}
+.br .bd{padding:14px;display:grid;gap:10px;font-size:12px;color:#5C3340}
+.br .s{border:1px solid #EBD3D3;border-radius:10px;padding:9px 12px}
+.br .r{display:grid;grid-template-columns:54px 1fr;gap:10px;border:1px solid #EBD3D3;border-radius:12px;padding:8px;align-items:center}
+.br .r u{height:44px;border-radius:8px;background:var(--pink)}.br .r b{color:var(--dk);font-size:13px}
+.phn{width:46%;max-width:150px;background:#2A0E17;border-radius:24px 24px 0 0;padding:7px 7px 0;box-shadow:0 10px 26px rgba(94,26,46,.22)}
+.phn div{background:#FFF8F6;border-radius:18px 18px 0 0;padding:12px;height:230px;display:grid;gap:8px;align-content:start;font-size:11px;font-weight:600;color:var(--dk)}
+.phn .ln{height:46px;border-radius:8px;background:#F0D3D9;position:relative}
+.phn .ln svg{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px)}
+.phn .bl{height:8px;border-radius:99px;background:#F0D3D9}.phn .bt2{height:26px;border-radius:99px;background:var(--wine)}
+.gd{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:6px;color:var(--wine)}
+.gd b{font:italic 400 clamp(34px,4.6vw,50px)/1.05 "Instrument Serif",serif}.gd span{font-size:15px}
+/* trabalho */
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.duo .c{padding:28px;min-height:230px}
+.ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--rose);color:var(--wine);font-weight:700;margin-bottom:6px}
+.c.pk .ic{background:var(--wine);color:#FFF1EE}
+.tg2{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px;opacity:.85}
+/* contato */
+footer{padding:clamp(48px,7vw,88px) 0 40px}
+.cb{background:var(--card);border:1px solid var(--line);border-radius:32px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,56px);align-items:center}
+.cb h2{font-size:clamp(40px,5vw,72px);margin:16px 0 0}
+.avail{display:inline-flex;align-items:center;gap:10px;background:rgba(242,184,198,.1);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:14px}
+.avail i{width:9px;height:9px;border-radius:50%;background:#7BE0A4}
+.cb p{color:var(--ink);opacity:.92;margin-bottom:14px}
+.cb .bts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cp{text-align:center;color:var(--mut);font-size:14px;margin:28px 0 0}
+.cb{position:relative;overflow:hidden;isolation:isolate}.cb::before{content:"";position:absolute;z-index:-1;width:360px;height:300px;left:-90px;bottom:-130px;border-radius:55% 45% 60% 40%/50% 55% 45% 50%;background:rgba(242,184,198,.12);filter:blur(36px)}.cb::after{content:"✦";position:absolute;z-index:-1;right:28px;top:20px;font-size:26px;color:rgba(242,184,198,.45)}.cb h2::after{content:" ✦";font-family:"Instrument Serif",serif;font-size:.35em;color:var(--rose);vertical-align:top}.avail{background:rgba(242,184,198,.14)}
+.band{position:relative;overflow:hidden;isolation:isolate}.band::before{content:"";position:absolute;z-index:-1;width:640px;height:420px;right:-160px;top:-120px;border-radius:50%;background:rgba(242,184,198,.1);filter:blur(60px)}
+.cv{position:relative;isolation:isolate}.cv .in{position:relative;overflow:hidden}.cv .in::before{content:"";position:absolute;z-index:-1;width:170px;height:140px;right:-50px;bottom:-50px;border-radius:60% 40% 55% 45%/50% 58% 42% 50%;background:rgba(242,184,198,.38);filter:blur(14px)}
+.tag::before{content:"✦ ";color:#E08AA3}.cv h3{letter-spacing:.01em}.cover{box-shadow:inset 0 -28px 36px -30px rgba(94,26,46,.35)}
+.logo{font:italic 400 30px/1 "Instrument Serif",Georgia,serif;letter-spacing:0;color:var(--rose);-webkit-text-stroke:.5px var(--rose)}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(14deg)}}
+.st{animation:fl 5s ease-in-out infinite}.s2{animation-duration:6.2s;animation-delay:-1.5s}.s3{animation-duration:4.6s;animation-delay:-3s}.s4{animation-duration:5.8s;animation-delay:-2s}
+/* casos: detalhes ao passar o mouse */
+.pcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pc{position:relative;border-radius:28px;overflow:hidden;background:#2A0E17;color:#FFEDEB;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-width:0;border:1px solid rgba(242,184,198,.2)}
+.pc>*{min-width:0}
+.pc img{grid-area:1/1;width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#2A0E17}
+.pc .bd{grid-area:2/1;padding:18px 22px 22px;display:grid;gap:6px;align-content:start}
+.pc .ov{grid-area:1/1/3/2;background:#2A0E17;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:9px;opacity:0}
+.pc:hover .ov,.pc:focus-within .ov{opacity:1}
+.pc small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#F2B8C6}
+.pc h3{font:400 clamp(26px,2.8vw,32px)/1 Anton,sans-serif;text-transform:uppercase;margin:0}
+.pc h4{font:600 15px/1.3 "DM Sans",sans-serif;margin:0;color:#F3D6DC}.pc p{margin:0;font-size:14px;color:#F3D6DC}.pc .fo{font-size:13px}.pc .fo b{color:#F2B8C6}
+.pc .ov h4{color:#FFEDEB}
+.pc .bt{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.pl{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:99px;background:#F2B8C6;color:#5E1A2E;font:600 15px "DM Sans",sans-serif;text-decoration:none;flex:1 1 140px}
+.pl.o{background:transparent;color:#FFEDEB;border:1.5px solid rgba(242,184,198,.5)}.pl i{font-style:normal}
+.pl:hover{background:#F8CBD6}.pl.o:hover{background:rgba(242,184,198,.14)}
+@media(hover:none),(max-width:900px){.pc{grid-template-rows:auto auto auto}.pc .bd{display:none}.pc .ov{grid-area:2/1;position:static;opacity:1;background:#3A0F20;padding:20px}}
+@media(max-width:900px){.pcs{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:900px){.hero{grid-template-columns:minmax(0,1fr)}.ph{order:-1;width:min(260px,70%);justify-self:start}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.ab,.cards,.cvs,.duo,.cb{grid-template-columns:minmax(0,1fr)}.nav ul{display:none}}
+@media(max-width:480px){.facts{grid-template-columns:minmax(0,1fr)}.nav{padding-left:16px}.btn.sm span{display:none}.cb .bts .btn,.bt .pill{flex:1 1 auto;justify-content:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* responsivo */
+html{overflow-x:clip}
+.logo,.nav ul a{display:inline-flex;align-items:center;min-height:44px}
+.nav ul a{padding:0 16px}
+.btn.sm{min-height:44px}
+@media(max-width:900px){
+.nav ul{display:flex;gap:0;margin-left:auto;margin-right:8px}.nav ul a{padding:0 12px;font-size:15px}
+.ph{width:min(230px,62%)}.ph .cap{text-align:left;margin-bottom:8px}.s1{left:-8px}.s2{right:-6px}.s3{left:-4px}.s4{right:6px}
+.hero{padding-top:20px;gap:22px}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pcs{max-width:620px;margin-inline:auto}
+}
+@media(max-width:600px){.cards{grid-template-columns:minmax(0,1fr)}.c{min-height:0}}
+@media(max-width:480px){
+.nav{padding:6px 6px 6px 16px}.logo{font-size:26px}.nav ul a{padding:0 8px;font-size:14px}.nav ul li:first-child{display:none}
+.hero .nm{font-size:clamp(32px,9.5vw,44px)}.hero h1{font-size:clamp(44px,15vw,64px)}
+.h2{font-size:clamp(34px,10vw,48px)}.cb h2{font-size:clamp(36px,11vw,52px)}
+.btn{min-height:48px}.cb .bts .btn{flex:1 1 calc(50% - 10px);justify-content:center}
+.box,.c{padding:20px}.cb{padding:24px 20px}
+}
+@media(max-width:360px){.nav ul a{padding:0 6px;font-size:13px}.logo{font-size:23px}}
+@media(min-width:901px) and (max-width:1100px){.hero h1{font-size:clamp(52px,8.4vw,96px)}.facts>div{padding:16px}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="w"><nav class="nav" aria-label="Principal"><a class="logo" href="#inicio">Sofia Mara</a>
+<ul><li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#casos">Casos</a></li></ul>
+<a class="btn sm" href="#contato"><span>Vamos conversar</span> <i>↗</i></a></nav></div></div>
+
+<main class="w" id="inicio">
+<div class="hero">
+<div>
+<span class="chip">Design, produto e pessoas.</span>
+<span class="it g nm">Sofia Mara,</span>
+<h1 class="d g">Product<br>Designer</h1>
+<p>Transformo problemas complexos em experiências digitais simples, intuitivas e funcionais. Conecto necessidades das pessoas, objetivos de negócio e tecnologia para criar produtos que fazem sentido do primeiro contato à entrega.</p>
+<a class="btn" href="#casos">Ver projetos <i>↓</i></a>
+</div>
+<div class="ph"><span class="cap it">Da ideia ao impacto.</span><div class="pic"><img src="assets/foto.jpg" alt="Retrato de Sofia Mara"></div><span class="st s1" aria-hidden="true">✦</span><span class="st s2" aria-hidden="true">✦</span><span class="st s3" aria-hidden="true">✦</span><span class="st s4" aria-hidden="true">✦</span></div>
+</div>
+<div class="facts">
+<div><small>Hoje</small><b>Product Designer Pleno</b><span>UX Group · iGaming</span></div>
+<div><small>Foco</small><b>Da descoberta à entrega</b><span>Decisões de design orientadas por contexto e evidências</span></div>
+<div><small>Setores</small><b>Produtos digitais diversos</b><span>iGaming · Fintech · E-commerce · Marketplaces</span></div>
+<div><small>Stack</small><b>Design e colaboração</b><span>Figma · Maze · Hotjar · Clarity · Jira · Slack · IA</span></div>
+</div>
+
+<section id="sobre"><h2 class="d h2"><span class="it">Quem</span> <span class="g">sou</span></h2><p class="lead">Meu jeito de pensar, construir e evoluir produtos digitais.</p>
+<div class="ab"><div class="box"><h3>Design com propósito</h3>
+<p>Sou Product Designer com experiência na construção e evolução de produtos digitais em diferentes contextos de negócio. Meu trabalho conecta UX, UI e visão de produto para transformar problemas em experiências claras, funcionais e consistentes.</p>
+<p>Gosto de entender o contexto antes de desenhar: investigar necessidades, mapear jornadas, explorar alternativas e considerar regras de negócio e limitações técnicas. Acredito que boas decisões de design surgem quando esses pontos são analisados em conjunto.</p>
+<p>Trabalho em parceria com Produto e Desenvolvimento, acompanhando as soluções da concepção ao handoff e à validação. Para mim, o trabalho não termina em uma interface bonita: ele precisa fazer sentido para quem usa e ser viável para quem constrói.</p></div>
+<div class="box"><h3>Ferramentas</h3><ul class="pills"><li>Figma</li><li>FigJam</li><li>Maze</li><li>Hotjar</li><li>Clarity</li><li>Google Analytics</li><li>Jira</li><li>Slack</li><li>Confluence</li><li>Claude</li><li>IA · Pesquisa e prototipação</li></ul></div></div></section>
+
+<section><h2 class="d h2"><span class="g">O que eu</span> <span class="it">faço</span></h2><p class="lead">Do problema ao handoff, acompanho a ideia até o seu produto.</p>
+<div class="cards">
+<div class="c dk"><h3>Product Discovery</h3><p>Investigo problemas, necessidades e contextos para apoiar decisões de produto com mais clareza e embasamento.</p></div>
+<div class="c dk"><h3>UX e UI Mobile</h3><p>Estruturo jornadas, fluxos e interfaces responsivas, priorizando usabilidade, hierarquia e consistência.</p></div>
+<div class="c pe"><h3>Design System</h3><p>Organizo componentes, padrões e estados para promover consistência, reutilização e evolução das interfaces.</p></div>
+<div class="c sf"><h3>Gamificação</h3><p>Estruturo mecânicas, progressão e recompensas alinhadas à experiência e aos objetivos do produto.</p></div>
+<div class="c dk"><h3>Handoff com Engenharia</h3><p>Documento fluxos, regras, estados e comportamentos para reduzir ambiguidades na implementação.</p></div>
+<div class="c pk"><h3>Prototipação com IA</h3><p>Exploro ideias e protótipos para testar possibilidades, comunicar soluções e acelerar a aprendizagem.</p></div>
+</div></section>
+</main>
+
+<div class="band" id="casos"><div class="w"><section>
+<h2 class="d h2"><span class="it">Casos</span> <span class="g">selecionados</span></h2>
+<p class="lead">Projetos que mostram como aplico o design para resolver problemas reais, em diferentes contextos de produto e negócio.</p>
+<div class="pcs"><article class="pc"><img src="assets/capas/gar.jpg" alt="Capa do projeto Garagem 010" loading="lazy"><div class="bd"><small>Marketplace · 2026</small><h3>Garagem 010</h3><h4>Marketplace de caminhões</h4></div><div class="ov"><small>Marketplace · 2026</small><h3>Garagem 010</h3><h4>Marketplace de caminhões</h4><p>Experiência digital para conectar compradores e vendedores de veículos pesados, com busca e anúncios organizados em uma jornada mais clara.</p><p class="fo"><b>Foco:</b> arquitetura da informação, descoberta de produtos e busca.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/251794497/E-commerce-Garagem010-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i>↗</i></a></div></div></article><article class="pc"><img src="assets/capas/ajx.jpg" alt="Capa do projeto AJX Capital" loading="lazy"><div class="bd"><small>Fintech · 2025</small><h3>AJX Capital</h3><h4>Experiência de investimento mobile</h4></div><div class="ov"><small>Fintech · 2025</small><h3>AJX Capital</h3><h4>Experiência de investimento mobile</h4><p>Redesign de uma experiência financeira para simplificar a apresentação das informações e tornar os passos mais claros para quem começa a investir.</p><p class="fo"><b>Foco:</b> hierarquia de informação, usabilidade e fluxos mobile.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/221381561/Aplicativo-AJX-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i>↗</i></a><a class="pl o" href="https://www.figma.com/slides/eUM4Y44WfViMMg2u6GrjgN" target="_blank" rel="noopener noreferrer">Ver apresentação <i>↗</i></a></div></div></article><article class="pc"><img src="assets/capas/gdc.jpg" alt="Capa do projeto Gomes da Costa" loading="lazy"><div class="bd"><small>E-commerce · 2024</small><h3>Gomes da Costa</h3><h4>Experiência de compra digital</h4></div><div class="ov"><small>E-commerce · 2024</small><h3>Gomes da Costa</h3><h4>Experiência de compra digital</h4><p>Projeto de UX/UI para organizar a experiência de compra, facilitando a descoberta de produtos e a navegação até a decisão de compra.</p><p class="fo"><b>Foco:</b> navegação, organização de conteúdo e jornada de compra.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/209493775/E-commerce-Gomes-da-Costa-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i>↗</i></a></div></div></article></div></div></section></div></div>
+
+<main class="w">
+<section id="time"><h2 class="d h2"><span class="it">Como eu</span> <span class="g">trabalho</span></h2><p class="lead">Equilíbrio entre colaboração, processo e boas decisões.</p>
+<div class="duo">
+<div class="c dk"><span class="ic" aria-hidden="true">●●</span><h3>Colaboração com o time</h3><p>Acredito em decisões de design construídas em conjunto. Uso o Slack e o Jira para alinhar contexto, registrar decisões, acompanhar pendências e manter Produto, Design e Engenharia na mesma página.</p><div class="tg2"><span>Slack</span><span>Jira</span><span>Figma</span><span>Confluence</span></div></div>
+<div class="c pk"><span class="ic" aria-hidden="true">✦</span><h3>IA como parte do processo</h3><p>Exploro ferramentas de IA para ampliar possibilidades, acelerar a prototipação e apoiar a descoberta de soluções. Uso esses recursos como suporte ao pensamento crítico, mantendo as decisões de design conectadas ao contexto e às necessidades do produto.</p><div class="tg2"><span>Claude</span><span>Figma Make</span><span>Prototipação</span><span>Exploração de ideias</span></div></div>
+</div></section>
+</main>
+
+<footer id="contato"><div class="w"><div class="cb">
+<div><span class="avail"><i></i>Disponível para novas oportunidades</span><h2 class="d g">Vamos<br>conversar?</h2></div>
+<div><p>Se você está construindo um produto digital e precisa transformar desafios complexos em experiências mais claras, vamos trocar ideias.</p><p>Estou aberta a novas oportunidades e a conversas sobre Design, Produto e tecnologia.</p>
+<div class="bts"><a class="btn" href="mailto:sofiamara09@gmail.com" target="_blank" rel="noopener noreferrer">E-mail <i>↗</i></a><a class="btn ghost" href="https://www.linkedin.com/in/sofimara/" target="_blank" rel="noopener noreferrer">LinkedIn <i>↗</i></a><a class="btn ghost" href="https://www.behance.net/sofiamara" target="_blank" rel="noopener noreferrer">Behance <i>↗</i></a><button class="btn ghost" id="copy" type="button" aria-live="polite">Copiar e-mail</button></div></div>
+</div><p class="cp">© 2026 Sofia Mara · São Paulo, Brasil</p></div></footer>
+
+<script>
+(function(){
+var d=document;
+// capas reais (assets/capas/gar.jpg, ajx.jpg, gdc.jpg) substituem os mockups, se existirem
+d.querySelectorAll('.cv').forEach(function(c){var k=c.dataset.k,cv=c.querySelector('.cover');if(!k||!cv)return;
+var im=new Image();im.className='real';im.alt='Capa do projeto';im.onload=function(){cv.appendChild(im);[].slice.call(cv.children).forEach(function(n){if(n!==im&&!n.classList.contains('real'))n.style.display='none'})};im.src='assets/capas/'+k+'.jpg'});
+// copiar e-mail
+var b=d.getElementById('copy');if(b)b.addEventListener('click',function(){var t='sofiamara09@gmail.com';function ok(){b.textContent='E-mail copiado ✓';setTimeout(function(){b.textContent='Copiar e-mail'},2200)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,ok)}else{var a=d.createElement('textarea');a.value=t;d.body.appendChild(a);a.select();try{d.execCommand('copy')}catch(e){}a.remove();ok()}});
+// menu ativo
+var links=[].slice.call(d.querySelectorAll('.nav ul a')),secs=links.map(function(a){return d.querySelector(a.getAttribute('href'))});
+function on(){var cur=0;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur&&scrollY>200)})}
+addEventListener('scroll',on,{passive:true});on();
+})();
+</script>
+</body>
+</html>
