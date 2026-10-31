@@ -36,4 +36,4 @@ function cur(){if(!t.clientWidth)return 0;var x=t.scrollLeft+4,k=0;for(var i=0;i
 function up(){var k=cur();[].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===k)});pv.disabled=k===0;nx.disabled=k===it.length-1}
 function go(d){var k=Math.max(0,Math.min(it.length-1,cur()+d));t.scrollTo({left:it[k].offsetLeft-t.offsetLeft,behavior:'smooth'})}
 pv.addEventListener('click',function(){go(-1)});nx.addEventListener('click',function(){go(1)});t.addEventListener('scroll',up,{passive:true});window.addEventListener('resize',up);up();
-if(window.ResizeObserver)new ResizeObserver(up).observe(t);window.addEventListener('hashchange',function(){t.scrollLeft=0;setTimeout(up,60);setTimeout(up,400)})})})();
+if(window.ResizeObserver){var ro=new ResizeObserver(up);ro.observe(t);[].forEach.call(it,function(x){ro.observe(x)})}[].forEach.call(t.querySelectorAll('img'),function(m){m.addEventListener('load',up)});window.addEventListener('hashchange',function(){t.scrollLeft=0;setTimeout(up,60);setTimeout(up,400)})})})();
