@@ -1,335 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta property="og:type" content="website"><meta property="og:title" content="Sofia Mara · Product Designer"><meta property="og:description" content="Product Designer em São Paulo. Produtos digitais de iGaming, fintech e e-commerce, da descoberta ao handoff."><meta property="og:image" content="assets/og.jpg"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sofia Mara · Product Designer</title>
-<meta name="description" content="Portfólio de Sofia Mara, Product Designer em São Paulo: produtos digitais de iGaming, fintech e e-commerce, da descoberta ao handoff.">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png"><link rel="icon" href="assets/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><meta name="theme-color" content="#1B0910"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sofia Mara · Product Designer</title><meta name="description" content="Product Designer em São Paulo. Produtos digitais de iGaming, fintech e e-commerce, da descoberta ao handoff.">
+<meta property="og:type" content="website"><meta property="og:title" content="Sofia Mara · Product Designer"><meta property="og:description" content="Product Designer em São Paulo. Produtos digitais de iGaming, fintech e e-commerce, da descoberta ao handoff."><meta property="og:image" content="assets/og.jpg"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1B0910">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32"><link rel="shortcut icon" href="assets/favicon.ico"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#1B0910;--band:#3A0F20;--card:#45142A;--line:rgba(242,184,198,.22);--ink:#FFEDEB;--mut:#D9ADB8;--rose:#F2B8C6;--pink:#EDA9BB;--soft:#F8D9DF;--peach:#FDE4DD;--wine:#5E1A2E;--dk:#2A0E17}
-*{box-sizing:border-box}
-html{scroll-behavior:auto;scroll-padding-top:90px}
-body{margin:0;background:radial-gradient(1000px 600px at 15% 4%,rgba(168,52,92,.46),transparent 70%),radial-gradient(760px 560px at 85% 22%,rgba(242,184,198,.2),transparent 68%),radial-gradient(600px 400px at 50% 48%,rgba(94,26,46,.35),transparent 70%),var(--bg);background-repeat:no-repeat;color:var(--ink);font:400 16px/1.55 "DM Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-h1,h2,h3,h4,p{margin-top:0}
-.w{width:min(1080px,100% - 32px);margin-inline:auto}
-.it{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400}
-.d{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.98}
-.g{background-image:linear-gradient(95deg,#F9B3C4,#FFC9B0);-webkit-background-clip:text;background-clip:text;color:transparent}
-:focus-visible{outline:3px solid var(--rose);outline-offset:3px;border-radius:8px}
-/* nav */
-.bar{position:sticky;top:0;z-index:20;padding:12px 0}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(32,10,20,.88);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:99px;padding:8px 8px 8px 22px}
-.logo{font:400 18px Anton,sans-serif;letter-spacing:.04em;text-decoration:none;color:var(--rose)}
-.nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
-.nav ul a{display:block;padding:8px 16px;border-radius:99px;text-decoration:none;color:var(--mut);font-size:15px}
-.nav ul a:hover,.nav ul a.on{color:var(--ink);background:rgba(242,184,198,.14)}
-.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:99px;background:var(--rose);color:var(--dk);font:500 16px "DM Sans",sans-serif;text-decoration:none;border:0;cursor:pointer}
-.btn:hover{background:#F8CBD6}
-.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}.btn.ghost:hover{background:rgba(242,184,198,.12)}
-.btn i,.pill i{font-style:normal}
-/* hero */
-.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:32px;align-items:center;padding:36px 0 28px}
-.chip{display:inline-block;background:rgba(242,184,198,.12);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:14px;color:var(--rose);margin-bottom:14px}
-.hero .nm{font-size:clamp(40px,6vw,72px);line-height:1;margin:0 0 -6px;display:block}
-.hero h1{font-size:clamp(52px,9vw,120px);margin:0 0 22px}
-.hero p{max-width:50ch;color:var(--ink);opacity:.92;font-size:clamp(16px,1.6vw,18px);margin-bottom:26px}
-.ph{position:relative;justify-self:center;width:min(320px,100%)}
-.ph .cap{display:block;text-align:right;color:var(--mut);font-size:15px;margin-bottom:10px}
-.ph .pic{border-radius:36px;aspect-ratio:4/5;overflow:hidden;border:2px solid rgba(242,184,198,.45)}
-.ph::before{content:"";position:absolute;inset:14% -14% -8% -14%;z-index:-1;border-radius:50%;background:radial-gradient(closest-side,rgba(248,190,205,.5),rgba(242,184,198,.12) 70%,transparent);filter:blur(30px)}.ph{isolation:isolate}.ph .pic{box-shadow:0 24px 60px rgba(0,0,0,.35)}
-.ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%;border-radius:36px}
-.ph .t{position:absolute;background:#2A0E17;color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:6px 14px;font-size:14px;font-weight:500}
-.st{position:absolute;color:var(--rose);line-height:1}.s1{left:-22px;top:56px;font-size:34px}.s2{right:-16px;top:34%;font-size:22px}.s3{left:-12px;bottom:70px;font-size:20px}.s4{right:10px;bottom:-14px;font-size:30px}
-.t1{left:-18px;top:70px;rotate:-6deg}.t2{right:-14px;top:42%;rotate:5deg}.t3{left:-10px;bottom:46px;rotate:-4deg}
-/* facts */
-.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:26px 0 8px}
-.facts>div{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 20px;display:grid;gap:4px;align-content:start}
-.facts small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--rose)}
-.facts b{font-weight:600;font-size:17px;line-height:1.3}
-.facts span{font-size:14px;color:var(--mut)}
-/* sections */
-section{padding:clamp(48px,7vw,88px) 0 0}
-.h2{font-size:clamp(40px,6vw,72px);margin:0 0 10px}
-.h2 .it{font-size:1.06em;text-transform:none;color:var(--pink)}
-.lead{color:var(--mut);max-width:60ch;margin:0 0 30px}
-.ab{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:start}
-.box{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:clamp(22px,3vw,32px)}
-.box h3{font:600 clamp(22px,2.4vw,26px)/1.2 "DM Sans",sans-serif;margin-bottom:14px}
-.box p{color:var(--ink);opacity:.92;margin-bottom:14px}.box p:last-child{margin-bottom:0}
-.pills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.pills li{border:1px solid var(--line);background:rgba(242,184,198,.08);border-radius:99px;padding:6px 14px;font-size:14px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.c{border-radius:24px;padding:24px;display:grid;gap:8px;align-content:start;min-height:170px}
-.c h3{font:600 20px/1.25 "DM Sans",sans-serif;margin:0}
-.c p{margin:0;font-size:15px}
-.c.dk{background:var(--card);border:1px solid var(--line);color:var(--ink)}.c.dk h3{color:var(--rose)}.c.dk p{color:var(--ink);opacity:.9}
-.c.pk{background:var(--pink);color:var(--dk)}.c.sf{background:var(--soft);color:var(--dk)}.c.pe{background:var(--peach);color:var(--dk)}
-.c.pk h3,.c.sf h3,.c.pe h3{color:var(--wine)}
-.cards .c{position:relative;overflow:hidden;isolation:isolate;border-radius:34px 22px 38px 22px}
-.cards .c:nth-child(even){border-radius:22px 38px 22px 34px}
-.cards .c::before{content:"";position:absolute;z-index:-1;width:150px;height:130px;right:-34px;bottom:-40px;border-radius:62% 38% 55% 45%/48% 58% 42% 52%;background:rgba(242,184,198,.1);filter:blur(10px)}
-.cards .c:nth-child(even)::before{right:auto;left:-40px;top:-46px;bottom:auto;border-radius:45% 55% 38% 62%/58% 42% 58% 42%;width:130px;height:120px}
-.cards .c.pe::before,.cards .c.sf::before{background:rgba(242,184,198,.45)}
-.cards .c.pk::before{background:rgba(255,241,238,.35)}
-/* casos */
-.band{background:var(--band);margin-top:clamp(56px,8vw,96px);padding:clamp(48px,7vw,80px) 0}
-.band section{padding:0}
-.cvs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.cv{background:var(--peach);color:var(--dk);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.cover{display:block;aspect-ratio:3/2;background:var(--pink);position:relative;overflow:hidden;text-decoration:none}
-.cover img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}.cv[data-k=ajx] .cover img.real{object-position:left center}
-.cv{box-shadow:0 18px 40px rgba(0,0,0,.28);border:1px solid rgba(94,26,46,.12)}.cover{border-bottom:4px solid var(--rose)}.cv .in{padding:24px 26px 28px}
-.in{padding:22px 24px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
-.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#B23A5C;font-weight:600}
-.cv h3{font:400 clamp(24px,2.6vw,30px)/1 Anton,sans-serif;text-transform:uppercase;margin:0}
-.cv h4{font:600 17px/1.3 "DM Sans",sans-serif;margin:2px 0 4px}
-.cv p{margin:0 0 6px;font-size:15px;color:#5C3340}.cv p.f{font-size:14px}
-.cv p.f b{color:var(--wine)}
-.bt{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:14px}
-.pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border-radius:99px;background:var(--wine);color:#FFF1EE;font:500 15px "DM Sans",sans-serif;text-decoration:none}
-.pill:hover{background:#7A2440}.pill.alt{background:var(--soft);color:var(--wine)}.pill.alt:hover{background:var(--rose)}
-/* mockups in covers */
-.mk{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;gap:14px;padding:22px 22px 0}
-.br{width:100%;max-width:330px;background:#fff;border-radius:14px 14px 0 0;overflow:hidden;box-shadow:0 10px 26px rgba(94,26,46,.2)}
-.br .tb{display:flex;gap:5px;background:#F6DCE2;padding:9px 12px}.br .tb i{width:8px;height:8px;border-radius:50%;background:#E3AFBC}
-.br .bd{padding:14px;display:grid;gap:10px;font-size:12px;color:#5C3340}
-.br .s{border:1px solid #EBD3D3;border-radius:10px;padding:9px 12px}
-.br .r{display:grid;grid-template-columns:54px 1fr;gap:10px;border:1px solid #EBD3D3;border-radius:12px;padding:8px;align-items:center}
-.br .r u{height:44px;border-radius:8px;background:var(--pink)}.br .r b{color:var(--dk);font-size:13px}
-.phn{width:46%;max-width:150px;background:#2A0E17;border-radius:24px 24px 0 0;padding:7px 7px 0;box-shadow:0 10px 26px rgba(94,26,46,.22)}
-.phn div{background:#FFF8F6;border-radius:18px 18px 0 0;padding:12px;height:230px;display:grid;gap:8px;align-content:start;font-size:11px;font-weight:600;color:var(--dk)}
-.phn .ln{height:46px;border-radius:8px;background:#F0D3D9;position:relative}
-.phn .ln svg{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px)}
-.phn .bl{height:8px;border-radius:99px;background:#F0D3D9}.phn .bt2{height:26px;border-radius:99px;background:var(--wine)}
-.gd{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:6px;color:var(--wine)}
-.gd b{font:italic 400 clamp(34px,4.6vw,50px)/1.05 "Instrument Serif",serif}.gd span{font-size:15px}
-/* trabalho */
-.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.duo .c{padding:28px;min-height:230px}
-.ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--rose);color:var(--wine);font-weight:700;margin-bottom:6px}
-.c.pk .ic{background:var(--wine);color:#FFF1EE}
-.tg2{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:13px;opacity:.85}
-/* contato */
-footer{padding:clamp(48px,7vw,88px) 0 40px}
-.cb{background:var(--card);border:1px solid var(--line);border-radius:32px;padding:clamp(28px,5vw,56px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,56px);align-items:center}
-.cb h2{font-size:clamp(40px,5vw,72px);margin:16px 0 0}
-.avail{display:inline-flex;align-items:center;gap:10px;background:rgba(242,184,198,.1);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:14px}
-.avail i{width:9px;height:9px;border-radius:50%;background:#7BE0A4}
-.cb p{color:var(--ink);opacity:.92;margin-bottom:14px}
-.cb .bts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.cp{text-align:center;color:var(--mut);font-size:14px;margin:28px 0 0}
-.cb{position:relative;overflow:hidden;isolation:isolate}.cb::before{content:"";position:absolute;z-index:-1;width:360px;height:300px;left:-90px;bottom:-130px;border-radius:55% 45% 60% 40%/50% 55% 45% 50%;background:rgba(242,184,198,.12);filter:blur(36px)}.cb::after{content:"✦︎";position:absolute;z-index:-1;right:28px;top:20px;font-size:26px;color:rgba(242,184,198,.45)}.cb h2::after{content:" ✦︎";font-family:"Instrument Serif",serif;font-size:.35em;color:var(--rose);vertical-align:top}.avail{background:rgba(242,184,198,.14)}
-.band{position:relative;overflow:hidden;isolation:isolate}.band::before{content:"";position:absolute;z-index:-1;width:640px;height:420px;right:-160px;top:-120px;border-radius:50%;background:rgba(242,184,198,.1);filter:blur(60px)}
-.cv{position:relative;isolation:isolate}.cv .in{position:relative;overflow:hidden}.cv .in::before{content:"";position:absolute;z-index:-1;width:170px;height:140px;right:-50px;bottom:-50px;border-radius:60% 40% 55% 45%/50% 58% 42% 50%;background:rgba(242,184,198,.38);filter:blur(14px)}
-.tag::before{content:"✦︎ ";color:#E08AA3}.cv h3{letter-spacing:.01em}.cover{box-shadow:inset 0 -28px 36px -30px rgba(94,26,46,.35)}
-.logo{font:italic 400 30px/1 "Instrument Serif",Georgia,serif;letter-spacing:0;color:var(--rose);-webkit-text-stroke:.5px var(--rose)}
-@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(14deg)}}
-.st{animation:fl 8s ease-in-out infinite}.s2{animation-duration:6.2s;animation-delay:-1.5s}.s3{animation-duration:4.6s;animation-delay:-3s}.s4{animation-duration:5.8s;animation-delay:-2s}
-/* casos: detalhes ao passar o mouse */
-.pcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.pc{position:relative;border-radius:28px;overflow:hidden;background:#2A0E17;color:#FFEDEB;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr;min-width:0;border:1px solid rgba(242,184,198,.2)}
-.pc>*{min-width:0}
-.pc img{grid-area:1/1;width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#2A0E17}
-.pc .bd{grid-area:2/1;padding:18px 22px 22px;display:grid;gap:6px;align-content:start}
-.pc .ov{grid-area:1/1/3/2;background:#2A0E17;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:9px;opacity:0}
-.pc:hover .ov,.pc:focus-within .ov{opacity:1}
-.pc small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#F2B8C6}
-.pc h3{font:400 clamp(26px,2.8vw,32px)/1 Anton,sans-serif;text-transform:uppercase;margin:0}
-.pc h4{font:600 15px/1.3 "DM Sans",sans-serif;margin:0;color:#F3D6DC}.pc p{margin:0;font-size:14px;color:#F3D6DC}.pc .fo{font-size:13px}.pc .fo b{color:#F2B8C6}
-.pc .ov h4{color:#FFEDEB}
-.pc .bt{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
-.pl{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:99px;background:#F2B8C6;color:#5E1A2E;font:600 15px "DM Sans",sans-serif;text-decoration:none;flex:1 1 140px}
-.pl.o{background:transparent;color:#FFEDEB;border:1.5px solid rgba(242,184,198,.5)}.pl i{font-style:normal}
-.pl:hover{background:#F8CBD6}.pl.o:hover{background:rgba(242,184,198,.14)}
-@media(hover:none),(max-width:900px){.pc{grid-template-rows:auto auto auto}.pc img{height:auto}.pc .bd{display:none}.pc .ov{grid-area:2/1;position:static;opacity:1;background:#3A0F20;padding:20px}}
-@media(max-width:900px){.pcs{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:900px){.hero{grid-template-columns:minmax(0,1fr)}.ph{order:-1;width:min(260px,70%);justify-self:start}.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.ab,.cards,.cvs,.duo,.cb{grid-template-columns:minmax(0,1fr)}.nav ul{display:none}}
-@media(max-width:480px){.facts{grid-template-columns:minmax(0,1fr)}.nav{padding-left:16px}.btn.sm span{display:none}.cb .bts .btn,.bt .pill{flex:1 1 auto;justify-content:center}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-/* responsivo */
-html{overflow-x:hidden}
-.logo,.nav ul a{display:inline-flex;align-items:center;min-height:44px}
-.nav ul a{padding:0 16px}
-.btn.sm{min-height:44px}
-@media(max-width:900px){
-.nav ul{display:flex;gap:0;margin-left:auto;margin-right:8px}.nav ul a{padding:0 12px;font-size:15px}
-.ph{width:min(230px,62%)}.ph .cap{text-align:left;margin-bottom:8px}.s1{left:-8px}.s2{right:-6px}.s3{left:-4px}.s4{right:6px}
-.hero{padding-top:20px;gap:22px}
-.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-.pcs{max-width:620px;margin-inline:auto}
-}
-@media(max-width:600px){.cards{grid-template-columns:minmax(0,1fr)}.c{min-height:0}}
-@media(max-width:480px){
-.nav{padding:6px 6px 6px 16px}.logo{font-size:26px}.nav ul a{padding:0 8px;font-size:14px}.nav ul li:first-child{display:none}
-.hero .nm{font-size:clamp(32px,9.5vw,44px)}.hero h1{font-size:clamp(44px,15vw,64px)}
-.h2{font-size:clamp(34px,10vw,48px)}.cb h2{font-size:clamp(36px,11vw,52px)}
-.btn{min-height:48px}.cb .bts .btn{flex:1 1 calc(50% - 10px);justify-content:center}
-.box,.c{padding:20px}.cb{padding:24px 20px}
-}
-@media(max-width:360px){.nav ul a{padding:0 6px;font-size:13px}.logo{font-size:23px}}
-@media(min-width:901px) and (max-width:1100px){.hero h1{font-size:clamp(52px,8.4vw,96px)}.facts>div{padding:16px}}
-/* setas em SVG e foto mobile */
-.ai{display:block;flex:none}.btn i,.pl i,.pill i,.pc .pl i{display:inline-grid;place-items:center;line-height:0;font-style:normal}
-@media(max-width:900px){
-.ph{width:min(280px,76%);justify-self:center;margin-top:4px}
-.ph .cap{text-align:center;margin:0 0 10px}
-.ph .pic{aspect-ratio:1/1;border-radius:32px}.ph img{border-radius:32px;object-position:50% 18%}
-.s1{left:-14px;top:42px}.s2{right:-10px;top:38%}.s3{left:-10px;bottom:56px}.s4{right:14px;bottom:-12px}
-.hero{justify-items:stretch}
-}
-@media(max-width:480px){.pc .bt .pl{flex:1 1 100%}.cb h2{font-size:clamp(34px,10vw,44px)}.cb h2::after{font-size:.3em}}
-/* hero: hierarquia e respiro */
-@media(max-width:900px){
-.hero .nm{font-size:clamp(34px,9.5vw,56px);line-height:1.2;margin:0 0 6px}
-.hero h1{font-size:clamp(68px,21vw,132px);line-height:.96;margin:0 0 22px}
-.hero p{font-size:17px;max-width:46ch}
-}
-@media(min-width:640px) and (max-width:900px){
-.hero{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:28px}
-.ph{order:0;width:min(300px,100%);justify-self:center}
-.hero h1{font-size:clamp(72px,13vw,110px)}
-}
-.logo{white-space:nowrap}@media(max-width:360px){.logo{font-size:21px}.nav{padding-left:12px}.nav ul a{padding:0 5px}}
-/* trajetória e detalhes */
-.tl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-.tl .c{min-height:0;gap:6px}.tl .c small{font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
-.tl .c.dk small{color:#F2B8C6}.tl .c h3{font:400 28px/1 Anton,sans-serif;text-transform:uppercase}.tl .c h4{font:600 15px/1.3 "DM Sans",sans-serif;margin:0}
-.keyf{margin-bottom:16px}.keyf li{background:rgba(242,184,198,.14)}
-.pc .mt{font-size:13px;color:#F3D6DC}.pc .mt b,.pc .rs b{color:#F2B8C6}
-.pc .rs{font-size:13px;color:#F3D6DC}.pc .rs em{font-style:normal;border:1px dashed rgba(242,184,198,.6);border-radius:8px;padding:1px 8px;color:#F2B8C6}
-@media(max-width:900px){.tl{grid-template-columns:minmax(0,1fr)}}
-/* overlay cobre só a capa; título fica visível embaixo */
-@media(hover:hover) and (min-width:901px){.pc .ov{position:absolute;inset:0;padding:20px 22px;gap:7px;justify-content:center;overflow:auto}.pc .ov small,.pc .ov h3,.pc .ov h4,.pc .ov .fo{display:none}.pc .ov p{font-size:13px;line-height:1.4}.pc .ov .bt{margin-top:8px}.pc .ov .pl{padding:10px 16px;font-size:14px}}
-/* contato: título maior */
-.cb h2{font-size:clamp(48px,6vw,84px);line-height:.95}
-@media(max-width:900px){.cb h2{font-size:clamp(40px,11vw,64px)}}
-/* ferramentas: mesma altura do card ao lado */
-.ab{align-items:stretch}
-.box .sub{margin-bottom:6px}
-.box h5{font:600 13px/1.2 "DM Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--rose);margin:18px 0 10px}
-/* overlay dos cases: leitura mais limpa */
-.pc .ov>p:not(.fo){font-size:14px;line-height:1.5;color:#FFEDEB;margin:0 0 4px}
-.pc dl.mt{margin:6px 0 2px;padding:12px 0;border-top:1px solid rgba(242,184,198,.22);border-bottom:1px solid rgba(242,184,198,.22);display:grid;gap:8px}
-.pc dl.mt div{display:grid;grid-template-columns:78px minmax(0,1fr);gap:10px;align-items:baseline}
-.pc dl.mt dt{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#F2B8C6;font-weight:600}
-.pc dl.mt dd{margin:0;font-size:13.5px;line-height:1.4;color:#FFEDEB}
-.pc .ov .bt{margin-top:10px}
-@media(hover:hover) and (min-width:901px) and (max-width:1100px){.pc .ov{padding:14px 18px;gap:4px}.pc dl.mt{padding:8px 0;gap:5px}.pc .ov>p:not(.fo){font-size:13px;line-height:1.4}.pc .ov .bt{margin-top:6px}}
-/* movimento sutil (respeita prefers-reduced-motion) */
-.js .rv{opacity:0;transform:translateY(22px);transition:opacity 1.4s cubic-bezier(.2,.7,.2,1),transform 1.4s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.js .rv.in{opacity:1;transform:none}
-.c,.box,.pc,.btn,.pill,.pills li{transition:transform .7s cubic-bezier(.2,.7,.2,1),box-shadow .7s,background-color .6s,border-color .6s}
-@media(hover:hover){.tl>.c:hover,#time .c:hover{transform:translateY(-4px)}.pc:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}.btn:hover{transform:translateY(-2px)}.pills li:hover{transform:translateY(-2px);border-color:rgba(242,184,198,.6)}.ai{transition:transform .6s}.btn:hover .ai,.pl:hover .ai{transform:translate(2px,-2px)}}
-@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-14px)}}
-.cb::before{animation:drift 26s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(120,230,160,.45)}60%{box-shadow:0 0 0 7px rgba(120,230,160,0)}}
-.cb .dot,.avail i{animation:pulse 4.5s ease-out infinite}
-</style>
-<script>
-/* Microsoft Clarity (não roda no preview do Claude nem em localhost) */
-if(!/claude|localhost|127\.0\.0\.1/.test(location.hostname)){
-(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","z1yjkkk715");
-}
-</script>
-</head>
-<body>
-<div class="bar"><div class="w"><nav class="nav" aria-label="Principal"><a class="logo" href="#inicio">Sofia Mara</a>
-<ul><li><a href="#inicio">Início</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#casos">Casos</a></li></ul>
-<a class="btn sm" href="#contato"><span>Vamos conversar</span> <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></nav></div></div>
-
-<main class="w" id="inicio">
-<div class="hero">
-<div>
-<span class="chip">Design, produto e pessoas.</span>
-<span class="it g nm">Sofia Mara,</span>
-<h1 class="d g">Product<br>Designer</h1>
-<p>Transformo problemas complexos em experiências digitais simples, intuitivas e funcionais. Conecto necessidades das pessoas, objetivos de negócio e tecnologia para criar produtos que fazem sentido do primeiro contato à entrega.</p>
-<a class="btn" href="#casos">Ver projetos <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3.5 8.5L8 13l4.5-4.5"/></svg></i></a>
-</div>
-<div class="ph"><span class="cap it">Da ideia ao impacto.</span><div class="pic"><img src="assets/foto.jpg" alt="Retrato de Sofia Mara"></div><span class="st s1" aria-hidden="true">✦︎</span><span class="st s2" aria-hidden="true">✦︎</span><span class="st s3" aria-hidden="true">✦︎</span><span class="st s4" aria-hidden="true">✦︎</span></div>
-</div>
-<div class="facts">
-<div><small>Hoje</small><b>Product Designer</b><span>UX Group · iGaming</span></div>
-<div><small>Foco</small><b>Da descoberta à entrega</b><span>Decisões de design orientadas por contexto e evidências</span></div>
-<div><small>Setores</small><b>Produtos digitais diversos</b><span>iGaming · Fintech · E-commerce · Marketplaces</span></div>
-<div><small>Stack</small><b>Design e colaboração</b><span>Figma · Maze · Hotjar · Clarity · Jira · Slack · IA</span></div>
-</div>
-
-<section id="sobre"><h2 class="d h2"><span class="it">Quem</span> <span class="g">sou</span></h2><p class="lead">Meu jeito de pensar, construir e evoluir produtos digitais.</p>
-<div class="ab"><div class="box"><h3>Design com propósito</h3><ul class="pills keyf"><li>Desde 2021 em UX/UI</li><li>iGaming</li><li>Fintech</li><li>E-commerce</li><li>Design System</li><li>Gamificação</li></ul>
-<p>Sou Product Designer com experiência na construção e evolução de produtos digitais em diferentes contextos de negócio. Meu trabalho conecta UX, UI e visão de produto para transformar problemas em experiências claras, funcionais e consistentes.</p>
-<p>Gosto de entender o contexto antes de desenhar: investigar necessidades, mapear jornadas, explorar alternativas e considerar regras de negócio e limitações técnicas. Acredito que boas decisões de design surgem quando esses pontos são analisados em conjunto.</p>
-<p>Trabalho em parceria com Produto e Desenvolvimento, acompanhando as soluções da concepção ao handoff e à validação. Para mim, o trabalho não termina em uma interface bonita: ele precisa fazer sentido para quem usa e ser viável para quem constrói.</p></div>
-<div class="box"><h3>Ferramentas</h3><p class="sub">O que uso no dia a dia para pesquisar, desenhar, validar e entregar.</p>
-<h5>Design e prototipação</h5><ul class="pills"><li>Figma</li><li>FigJam</li><li>IA (Claude)</li></ul>
-<h5>Pesquisa e análise</h5><ul class="pills"><li>Maze</li><li>Hotjar</li><li>Clarity</li><li>Google Analytics</li></ul>
-<h5>Gestão e colaboração</h5><ul class="pills"><li>Jira</li><li>Confluence</li><li>Slack</li></ul></div></div></section>
-
-<section id="trajetoria"><h2 class="d h2"><span class="it">Minha</span> <span class="g">trajetória</span></h2><p class="lead">Onde atuei e o que cada experiência me ensinou.</p>
-<div class="tl">
-<div class="c dk"><small>Jul/2026 · atual</small><h3>UX Group</h3><h4>Product Designer · iGaming</h4><p>Evolução do app mobile: perfil, gamificação, clubes de fidelidade e desafios. Design System e handoff com Engenharia, para reduzir fricções e deixar as jornadas mais claras.</p></div>
-<div class="c pk"><small>Nov/2024 – Nov/2025</small><h3>Serasa Experian</h3><h4>Product Designer · Premium</h4><p>Pesquisas e entrevistas para entender a percepção de valor do produto premium. A partir delas, ajudei a estruturar uma nova identidade e experiência, com apoio à retenção.</p></div>
-<div class="c sf"><small>Desde 2021</small><h3>Solaris</h3><h4>Cofundadora · Product Designer</h4><p>Estúdio de design de produtos digitais. Projetos de marketplace, fintech e e-commerce, da descoberta ao handoff.</p></div>
-</div></section>
-
-<section><h2 class="d h2"><span class="g">O que eu</span> <span class="it">faço</span></h2><p class="lead">Do problema ao handoff, acompanho a ideia até o seu produto.</p>
-<div class="cards">
-<div class="c dk"><h3>Product Discovery</h3><p>Investigo problemas, necessidades e contextos para apoiar decisões de produto com mais clareza e embasamento.</p></div>
-<div class="c dk"><h3>UX e UI Mobile</h3><p>Estruturo jornadas, fluxos e interfaces responsivas, priorizando usabilidade, hierarquia e consistência.</p></div>
-<div class="c pe"><h3>Design System</h3><p>Organizo componentes, padrões e estados para promover consistência, reutilização e evolução das interfaces.</p></div>
-<div class="c sf"><h3>Gamificação</h3><p>Estruturo mecânicas, progressão e recompensas alinhadas à experiência e aos objetivos do produto.</p></div>
-<div class="c dk"><h3>Handoff com Engenharia</h3><p>Documento fluxos, regras, estados e comportamentos para reduzir ambiguidades na implementação.</p></div>
-<div class="c pk"><h3>Prototipação com IA</h3><p>Exploro ideias e protótipos para testar possibilidades, comunicar soluções e acelerar a aprendizagem.</p></div>
-</div></section>
-</main>
-
-<div class="band" id="casos"><div class="w"><section>
-<h2 class="d h2"><span class="it">Casos</span> <span class="g">selecionados</span></h2>
-<p class="lead">Projetos que mostram como aplico o design para resolver problemas reais, em diferentes contextos de produto e negócio.</p>
-<div class="pcs"><article class="pc"><img src="assets/capas/gar.jpg" alt="Capa do projeto Garagem 010"><div class="bd"><small>Marketplace · 2026</small><h3>Garagem 010</h3><h4>Marketplace de caminhões</h4></div><div class="ov"><small>Marketplace · 2026</small><h3>Garagem 010</h3><h4>Marketplace de caminhões</h4><p>Experiência digital para conectar compradores e vendedores de veículos pesados, com busca e anúncios organizados em uma jornada mais clara.</p><dl class="mt"><div><dt>Papel</dt><dd>UX/UI Design · Discovery e Delivery</dd></div><div><dt>Contexto</dt><dd>Solaris · 2026</dd></div></dl><p class="fo"><b>Foco:</b> arquitetura da informação, descoberta de produtos e busca.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/251794497/E-commerce-Garagem010-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div></article><article class="pc"><img src="assets/capas/ajx.jpg" alt="Capa do projeto AJX Capital"><div class="bd"><small>Fintech · 2025</small><h3>AJX Capital</h3><h4>Experiência de investimento mobile</h4></div><div class="ov"><small>Fintech · 2025</small><h3>AJX Capital</h3><h4>Experiência de investimento mobile</h4><p>Redesign de uma experiência financeira para simplificar a apresentação das informações e tornar os passos mais claros para quem começa a investir.</p><dl class="mt"><div><dt>Papel</dt><dd>Product Design · UX/UI</dd></div><div><dt>Contexto</dt><dd>App mobile · 2025</dd></div></dl><p class="fo"><b>Foco:</b> hierarquia de informação, usabilidade e fluxos mobile.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/221381561/Aplicativo-AJX-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="pl o" href="https://www.figma.com/slides/eUM4Y44WfViMMg2u6GrjgN" target="_blank" rel="noopener noreferrer">Ver apresentação <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div></article><article class="pc"><img src="assets/capas/gdc.jpg" alt="Capa do projeto Gomes da Costa"><div class="bd"><small>E-commerce · 2024</small><h3>Gomes da Costa</h3><h4>Experiência de compra digital</h4></div><div class="ov"><small>E-commerce · 2024</small><h3>Gomes da Costa</h3><h4>Experiência de compra digital</h4><p>Projeto de UX/UI para organizar a experiência de compra, facilitando a descoberta de produtos e a navegação até a decisão de compra.</p><dl class="mt"><div><dt>Papel</dt><dd>UX/UI Design</dd></div><div><dt>Contexto</dt><dd>E-commerce · Social Unlimited · 2024</dd></div></dl><p class="fo"><b>Foco:</b> navegação, organização de conteúdo e jornada de compra.</p><div class="bt"><a class="pl" href="https://www.behance.net/gallery/209493775/E-commerce-Gomes-da-Costa-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div></article></div></div></section></div></div>
-
-<main class="w">
-<section id="time"><h2 class="d h2"><span class="it">Como eu</span> <span class="g">trabalho</span></h2><p class="lead">Equilíbrio entre colaboração, processo e boas decisões.</p>
-<div class="duo">
-<div class="c dk"><span class="ic" aria-hidden="true">●︎●︎</span><h3>Colaboração com o time</h3><p>Acredito em decisões de design construídas em conjunto. Uso o Slack e o Jira para alinhar contexto, registrar decisões, acompanhar pendências e manter Produto, Design e Engenharia na mesma página.</p><div class="tg2"><span>Slack</span><span>Jira</span><span>Figma</span><span>Confluence</span></div></div>
-<div class="c pk"><span class="ic" aria-hidden="true">✦︎</span><h3>IA como parte do processo</h3><p>Exploro ferramentas de IA para ampliar possibilidades, acelerar a prototipação e apoiar a descoberta de soluções. Uso esses recursos como suporte ao pensamento crítico, mantendo as decisões de design conectadas ao contexto e às necessidades do produto.</p><div class="tg2"><span>Claude</span><span>Figma Make</span><span>Prototipação</span><span>Exploração de ideias</span></div></div>
-</div></section>
-</main>
-
-<footer id="contato"><div class="w"><div class="cb">
-<div><span class="avail"><i></i>Aberta a boas conversas</span><h2 class="d g">Vamos<br>conversar?</h2></div>
-<div><p>Se você está construindo um produto digital e precisa transformar desafios complexos em experiências mais claras, vamos trocar ideias.</p><p>Estou aberta a novas oportunidades e a conversas sobre Design, Produto e tecnologia.</p>
-<div class="bts"><a class="btn" href="mailto:sofiamara09@gmail.com" target="_blank" rel="noopener noreferrer">E-mail <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn ghost" href="https://www.linkedin.com/in/sofimara/" target="_blank" rel="noopener noreferrer">LinkedIn <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn ghost" href="https://www.behance.net/sofiamara" target="_blank" rel="noopener noreferrer">Behance <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn ghost" href="https://github.com/SofisMara" target="_blank" rel="noopener noreferrer">GitHub <i><svg class="ai" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><button class="btn ghost" id="copy" type="button" aria-live="polite">Copiar e-mail</button></div></div>
-</div><p class="cp">© 2026 Sofia Mara · São Paulo, Brasil</p></div></footer>
-
-<script>
-(function(){try{document.documentElement.classList.add('js');
-var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
-var els=[].slice.call(document.querySelectorAll('section>h2,section>.lead,.facts>*,.ab>.box,.tl>.c,.cards>.c,.pcs>.pc,.ux>*,.cb'));
-els.forEach(function(e,i){e.classList.add('rv');var sib=[].indexOf.call(e.parentNode.children,e);e.style.setProperty('--d',Math.min(sib,5)*.15+'s')});
-if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){var t=x.target;t.classList.add('in');io.unobserve(t);setTimeout(function(){t.classList.remove('rv','in');t.style.removeProperty('--d')},2600)}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
-els.forEach(function(e){io.observe(e)});
-}catch(e){document.documentElement.classList.remove('js')}})();
-</script>
-<script>
-(function(){
-var d=document;
-// capas reais (assets/capas/gar.jpg, ajx.jpg, gdc.jpg) substituem os mockups, se existirem
-d.querySelectorAll('.cv').forEach(function(c){var k=c.dataset.k,cv=c.querySelector('.cover');if(!k||!cv)return;
-var im=new Image();im.className='real';im.alt='Capa do projeto';im.onload=function(){cv.appendChild(im);[].slice.call(cv.children).forEach(function(n){if(n!==im&&!n.classList.contains('real'))n.style.display='none'})};im.src='assets/capas/'+k+'.jpg'});
-// copiar e-mail
-var b=d.getElementById('copy');if(b)b.addEventListener('click',function(){var t='sofiamara09@gmail.com';function ok(){b.textContent='E-mail copiado ✓︎';setTimeout(function(){b.textContent='Copiar e-mail'},2200)}
-if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok,ok)}else{var a=d.createElement('textarea');a.value=t;d.body.appendChild(a);a.select();try{d.execCommand('copy')}catch(e){}a.remove();ok()}});
-// menu ativo
-var links=[].slice.call(d.querySelectorAll('.nav ul a')),secs=links.map(function(a){return d.querySelector(a.getAttribute('href'))});
-function on(){var cur=0;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur&&scrollY>200)})}
-addEventListener('scroll',on,{passive:true});on();
-})();
-</script>
-</body>
-</html>
+<link rel="stylesheet" href="assets/style.css"></head><body><div class="bar"></div><header class="nav"><a class="logo" href="#inicio">Sofia Mara</a><a class="l hm" href="#casos">Casos</a><a class="l hm" href="#sobre">Sobre mim</a><a class="l hm" href="#contato">Contato</a><a class="cta" href="#contato">Vamos conversar <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></header>
+<div id="home"><main>
+<section class="hero" id="inicio"><div class="wrap"><span class="chip">Design, produto e pessoas.</span>
+<h1 class="d"><span class="it">Oi,</span><span class="ph"><img src="assets/foto.jpg" alt="Retrato de Sofia Mara"><span class="st">✦</span><span class="st">✦</span><span class="st">✦</span></span><span>eu sou a <span class="g">Sofia!</span></span></h1>
+<p class="sub">Product Designer. Transformo problemas complexos em experiências digitais simples, intuitivas e funcionais. Conecto necessidades das pessoas, objetivos de negócio e tecnologia para criar produtos que fazem sentido do primeiro contato à entrega.</p>
+<a class="down" href="#casos" aria-label="Ver casos"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3v13M4.5 10.5L10 16l5.5-5.5"/></svg></a></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="facts"><div class="fact" data-rv><small>Hoje</small><b>Product Designer</b><span>UX Group · iGaming</span></div><div class="fact" data-rv><small>Foco</small><b>Da descoberta à entrega</b><span>Decisões orientadas por contexto e evidências</span></div><div class="fact" data-rv><small>Setores</small><b>Produtos digitais diversos</b><span>iGaming · Fintech · E-commerce · Marketplaces</span></div><div class="fact" data-rv><small>Stack</small><b>Design e colaboração</b><span>Figma · Maze · Hotjar · Clarity · Jira · Slack · IA</span></div></div></div></section>
+<section id="casos"><div class="wrap"><h2 class="d" data-rv><span class="it">Casos</span> <span class="g">selecionados</span></h2><p class="lead" data-rv>Projetos que mostram como aplico o design para resolver problemas reais, em diferentes contextos de produto e negócio.</p><div class="tabsx"><div class="tabbar" role="tablist" data-rv><button class="tb on" role="tab" id="tb0" aria-selected="true" aria-controls="pn0" data-i="0" style="--bg:#1A1A1A;--ac:#F4C20D;--on:#141414" type="button"><em>Garagem 010</em></button><button class="tb" role="tab" id="tb1" aria-selected="false" aria-controls="pn1" data-i="1" style="--bg:#0D1232;--ac:#5B86FF;--on:#FFFFFF" type="button"><em>AJX Capital</em></button><button class="tb" role="tab" id="tb2" aria-selected="false" aria-controls="pn2" data-i="2" style="--bg:#012D74;--ac:#FF8A1F;--on:#012D74" type="button"><em>Gomes da Costa</em></button></div><div class="panels" data-rv><a class="sc on" role="tabpanel" id="pn0" aria-labelledby="tb0" href="#/garagem-010" style="--bg:#1A1A1A;--fg:#FFFFFF;--ac:#F4C20D;--on:#141414"><div class="tx"><small>Marketplace · 2026</small><h3>Garagem 010</h3><p>Experiência digital para conectar compradores e vendedores de veículos pesados, com busca e anúncios organizados em uma jornada mais clara.</p><dl class="mini"><div><dt>Papel</dt><dd>UX/UI Design · Discovery e Delivery</dd></div><div><dt>Contexto</dt><dd>Solaris</dd></div></dl><span class="vp">Ver case <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></span></div><div class="fr"><img src="assets/capas/gar.jpg" alt="Capa do projeto Garagem 010" loading="lazy"></div></a><a class="sc" role="tabpanel" id="pn1" aria-labelledby="tb1" href="#/ajx-capital" style="--bg:#0D1232;--fg:#FFFFFF;--ac:#5B86FF;--on:#FFFFFF"><div class="tx"><small>Fintech · 2025</small><h3>AJX Capital</h3><p>Redesign de uma experiência financeira para simplificar a apresentação das informações e tornar os passos mais claros para quem começa a investir.</p><dl class="mini"><div><dt>Papel</dt><dd>Product Design · UX/UI</dd></div><div><dt>Contexto</dt><dd>App mobile</dd></div></dl><span class="vp">Ver case <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></span></div><div class="fr"><img src="assets/capas/ajx.jpg" alt="Capa do projeto AJX Capital" loading="lazy"></div></a><a class="sc" role="tabpanel" id="pn2" aria-labelledby="tb2" href="#/gomes-da-costa" style="--bg:#012D74;--fg:#FFFFFF;--ac:#FF8A1F;--on:#012D74"><div class="tx"><small>E-commerce · 2024</small><h3>Gomes da Costa</h3><p>Projeto de UX/UI para organizar a experiência de compra, facilitando a descoberta de produtos e a navegação até a decisão de compra.</p><dl class="mini"><div><dt>Papel</dt><dd>UX/UI Design</dd></div><div><dt>Contexto</dt><dd>Social Unlimited</dd></div></dl><span class="vp">Ver case <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></span></div><div class="fr"><img src="assets/capas/gdc.jpg" alt="Capa do projeto Gomes da Costa" loading="lazy"></div></a></div></div></div></section>
+<section id="sobre"><div class="wrap"><div class="ab"><div><span class="lab" data-rv>Sobre mim</span><h2 class="d" data-rv>Design com <span class="it">propósito</span></h2>
+<p data-rv>Sou Product Designer com experiência na construção e evolução de produtos digitais em diferentes contextos de negócio. Meu trabalho conecta UX, UI e visão de produto para transformar problemas em experiências claras, funcionais e consistentes.</p>
+<p data-rv>Gosto de entender o contexto antes de desenhar: investigar necessidades, mapear jornadas, explorar alternativas e considerar regras de negócio e limitações técnicas. Acredito que boas decisões de design surgem quando esses pontos são analisados em conjunto.</p>
+<p data-rv>Trabalho em parceria com Produto e Desenvolvimento, acompanhando as soluções da concepção ao handoff e à validação. Para mim, o trabalho não termina em uma interface bonita: ele precisa fazer sentido para quem usa e ser viável para quem constrói.</p><ul class="topics" data-rv><li><b>Desde 2021</b>Atuando com UX/UI</li><li><b>Solaris</b>Cofundadora e Product Designer</li><li><b>Formação</b>AI Designer e Prototipação com IA (Tera)</li><li><b>Onde</b>São Paulo, Brasil</li></ul></div>
+<div class="pt" data-rv><img src="assets/foto.jpg" alt="Sofia Mara" loading="lazy"></div></div>
+<div class="tools2" data-rv><span class="lab">Ferramentas e práticas</span><div class="seg" role="tablist"><button role="tab" class="on" data-i="0">Design e prototipação</button><button role="tab" class="" data-i="1">Pesquisa e análise</button><button role="tab" class="" data-i="2">Gestão e colaboração</button><button role="tab" class="" data-i="3">Prática de produto</button></div><div class="sp on" role="tabpanel"><p class="bs">Do wireframe ao protótipo de alta fidelidade.</p><ul class="pills"><li>Figma</li><li>FigJam</li><li>Figma Make</li><li>Adobe XD</li><li>Pacote Adobe</li><li>IA (Claude)</li><li>ChatGPT</li></ul></div><div class="sp" role="tabpanel"><p class="bs">Entender o usuário e validar antes de investir em desenvolvimento.</p><ul class="pills"><li>Maze</li><li>Hotjar</li><li>Clarity</li><li>Google Analytics</li><li>Testes com usuários</li><li>Análise de dados</li></ul></div><div class="sp" role="tabpanel"><p class="bs">Alinhar Produto, Design e Engenharia no mesmo ritmo.</p><ul class="pills"><li>Jira</li><li>Confluence</li><li>Slack</li><li>Metodologias ágeis</li></ul></div><div class="sp" role="tabpanel"><p class="bs">O que eu aplico em cada projeto.</p><ul class="pills"><li>Product Discovery</li><li>Visão de produto</li><li>User Interface (UI)</li><li>Design System</li><li>Handoff</li><li>Gamificação</li></ul></div></div></div></section>
+<section id="contato"><div class="wrap"><div class="cb" data-rv><div><span class="avail"><i></i>Aberta a boas conversas</span><h2 class="d g">Vamos<br>conversar?</h2></div><div><p>Se você está construindo um produto digital e precisa transformar desafios complexos em experiências mais claras, vamos trocar ideias.</p><p>Estou aberta a novas oportunidades e a conversas sobre Design, Produto e tecnologia.</p>
+<div class="bts"><a class="btn p" href="mailto:sofiamara09@gmail.com" target="_blank" rel="noopener noreferrer">E-mail <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn" href="https://www.linkedin.com/in/sofimara/" target="_blank" rel="noopener noreferrer">LinkedIn <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn" href="https://www.behance.net/sofiamara" target="_blank" rel="noopener noreferrer">Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn" href="https://github.com/SofisMara" target="_blank" rel="noopener noreferrer">GitHub <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><button class="btn" id="copy" type="button">Copiar e-mail</button></div></div></div></div></section>
+</main></div>
+<div class="view" id="v-garagem-010" data-ac="#F4C20D" data-on="#141414" data-tint="rgba(244,194,13,.16)" data-title="Garagem 010 · Sofia Mara" hidden><main class="view-main"><div class="wrap"><div class="ch"><div class="row"><div><span class="lab" data-rv>Case · Marketplace · 2026</span><h1 class="d" data-rv>Garagem 010</h1><p class="sm" data-rv>Experiência digital para conectar compradores e vendedores de veículos pesados, com busca e anúncios organizados em uma jornada mais clara.</p>
+<div class="bts" style="justify-content:flex-start;margin:0" data-rv><a class="btn p" href="https://www.behance.net/gallery/251794497/E-commerce-Garagem010-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<dl class="meta" data-rv><div><dt>Ano</dt><dd>2026</dd></div><div><dt>Papel</dt><dd>UX/UI Design · Discovery e Delivery</dd></div><div><dt>Contexto</dt><dd>Solaris</dd></div><div><dt>Segmento</dt><dd>Marketplace</dd></div></dl></div>
+<div class="cover" data-rv><img src="assets/capas/gar.jpg" alt="Capa do projeto Garagem 010"></div></div>
+<div class="sec" data-rv><div><span class="lab">Foco</span><h2>No que me concentrei</h2></div><ul class="foc"><li><em>01</em><b>Arquitetura da informação</b>Organização do conteúdo para que o caminho até o anúncio seja claro.</li><li><em>02</em><b>Descoberta de produtos</b>Jornada pensada para quem procura e compara veículos pesados.</li><li><em>03</em><b>Busca</b>Busca e anúncios organizados para facilitar a decisão.</li></ul></div>
+<div class="sec car" data-rv><div class="chd"><div><span class="lab">Detalhes</span><h2>Um olhar de perto</h2></div><div class="arr"><button type="button" class="pv" aria-label="Anterior">&#8592;</button><button type="button" class="nx2" aria-label="Próximo">&#8594;</button></div></div><div class="trk"><figure><img src="assets/capas/gar.jpg" alt="Garagem 010, imagem 1" loading="lazy"></figure><figure><img src="assets/capas/d-gar-2.jpg" alt="Garagem 010, imagem 2" loading="lazy"></figure><figure><img src="assets/capas/d-gar-3.jpg" alt="Garagem 010, imagem 3" loading="lazy"></figure><figure><img src="assets/capas/d-gar-4.jpg" alt="Garagem 010, imagem 4" loading="lazy"></figure><figure><img src="assets/capas/d-gar-5.jpg" alt="Garagem 010, imagem 5" loading="lazy"></figure><figure><img src="assets/capas/g-gar-6a.jpg" alt="Garagem 010, imagem 6" loading="lazy"></figure><figure><img src="assets/capas/g-gar-6b.jpg" alt="Garagem 010, imagem 7" loading="lazy"></figure><figure><img src="assets/capas/g-gar-8a.jpg" alt="Garagem 010, imagem 8" loading="lazy"></figure><figure><img src="assets/capas/g-gar-8b.jpg" alt="Garagem 010, imagem 9" loading="lazy"></figure><a class="mais" href="https://www.behance.net/gallery/251794497/E-commerce-Garagem010-UIUX-Design" target="_blank" rel="noopener noreferrer"><span class="lab">Case completo</span><b>Ver todas as telas no Behance</b><i><i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></i></a></div><div class="dots"></div></div><div class="duo" data-rv><div class="gc"><span class="lab">Palavras-chave</span><h3>O projeto em poucas palavras</h3><ul class="pills"><li>Discovery</li><li>Delivery</li><li>UX/UI Design</li><li>Caminhões</li><li>2026</li></ul></div><div class="gc"><span class="lab">Ferramentas</span><h3>Projeto realizado com</h3><ul class="pills"><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Teams</li></ul><p class="by">Desenvolvido por <b>Solaris</b></p></div></div>
+<div class="cta2" data-rv><span class="lab">Case completo</span><h2>Veja o processo e as telas</h2><p>O projeto inteiro, com telas e detalhes, está no meu Behance.</p><div class="bts"><a class="btn p" href="https://www.behance.net/gallery/251794497/E-commerce-Garagem010-UIUX-Design" target="_blank" rel="noopener noreferrer">Abrir no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<div class="nx" data-rv><a href="#/gomes-da-costa"><small>← Anterior</small><b>Gomes da Costa</b></a><a class="r" href="#/ajx-capital"><small>Próximo →</small><b>AJX Capital</b></a></div>
+</div></main></div>
+<div class="view" id="v-ajx-capital" data-ac="#5B86FF" data-on="#FFFFFF" data-tint="rgba(59,99,240,.22)" data-title="AJX Capital · Sofia Mara" hidden><main class="view-main"><div class="wrap"><div class="ch"><div class="row"><div><span class="lab" data-rv>Case · Fintech · 2025</span><h1 class="d" data-rv>AJX Capital</h1><p class="sm" data-rv>Redesign de uma experiência financeira para simplificar a apresentação das informações e tornar os passos mais claros para quem começa a investir.</p>
+<div class="bts" style="justify-content:flex-start;margin:0" data-rv><a class="btn p" href="https://www.behance.net/gallery/221381561/Aplicativo-AJX-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn" href="https://www.figma.com/slides/eUM4Y44WfViMMg2u6GrjgN" target="_blank" rel="noopener noreferrer">Ver apresentação <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<dl class="meta" data-rv><div><dt>Ano</dt><dd>2025</dd></div><div><dt>Papel</dt><dd>Product Design · UX/UI</dd></div><div><dt>Contexto</dt><dd>App mobile</dd></div><div><dt>Segmento</dt><dd>Fintech</dd></div></dl></div>
+<div class="cover" data-rv><img src="assets/capas/ajx.jpg" alt="Capa do projeto AJX Capital"></div></div>
+<div class="sec" data-rv><div><span class="lab">Foco</span><h2>No que me concentrei</h2></div><ul class="foc"><li><em>01</em><b>Hierarquia de informação</b>Dados financeiros apresentados de forma simples e priorizada.</li><li><em>02</em><b>Usabilidade</b>Passos mais claros para quem está começando a investir.</li><li><em>03</em><b>Fluxos mobile</b>Jornadas pensadas para o uso no celular.</li></ul></div>
+<div class="sec car" data-rv><div class="chd"><div><span class="lab">Detalhes</span><h2>Um olhar de perto</h2></div><div class="arr"><button type="button" class="pv" aria-label="Anterior">&#8592;</button><button type="button" class="nx2" aria-label="Próximo">&#8594;</button></div></div><div class="trk"><figure><img src="assets/capas/ajx.jpg" alt="AJX Capital, imagem 1" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-1.jpg" alt="AJX Capital, imagem 2" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-2.jpg" alt="AJX Capital, imagem 3" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-3.jpg" alt="AJX Capital, imagem 4" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-4.jpg" alt="AJX Capital, imagem 5" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-5.jpg" alt="AJX Capital, imagem 6" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-6.jpg" alt="AJX Capital, imagem 7" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-7.jpg" alt="AJX Capital, imagem 8" loading="lazy"></figure><figure><img src="assets/capas/g-ajx-8.jpg" alt="AJX Capital, imagem 9" loading="lazy"></figure><a class="mais" href="https://www.behance.net/gallery/221381561/Aplicativo-AJX-UIUX-Design" target="_blank" rel="noopener noreferrer"><span class="lab">Case completo</span><b>Ver todas as telas no Behance</b><i><i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></i></a><a class="mais" href="https://www.figma.com/slides/eUM4Y44WfViMMg2u6GrjgN" target="_blank" rel="noopener noreferrer"><span class="lab">Figma</span><b>Ver a apresentação completa</b><i><i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></i></a></div><div class="dots"></div></div><div class="duo" data-rv><div class="gc"><span class="lab">Palavras-chave</span><h3>O projeto em poucas palavras</h3><ul class="pills"><li>Product Design</li><li>Aplicativo</li><li>UX Design</li><li>Março de 2025</li></ul></div><div class="gc"><span class="lab">Autoria</span><h3>Desenvolvido por</h3><p class="by"><b>Sofia Silveira</b></p></div></div>
+<div class="cta2" data-rv><span class="lab">Case completo</span><h2>Veja o processo e as telas</h2><p>O projeto inteiro, com telas e detalhes, está no meu Behance.</p><div class="bts"><a class="btn p" href="https://www.behance.net/gallery/221381561/Aplicativo-AJX-UIUX-Design" target="_blank" rel="noopener noreferrer">Abrir no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a><a class="btn" href="https://www.figma.com/slides/eUM4Y44WfViMMg2u6GrjgN" target="_blank" rel="noopener noreferrer">Ver apresentação <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<div class="nx" data-rv><a href="#/garagem-010"><small>← Anterior</small><b>Garagem 010</b></a><a class="r" href="#/gomes-da-costa"><small>Próximo →</small><b>Gomes da Costa</b></a></div>
+</div></main></div>
+<div class="view" id="v-gomes-da-costa" data-ac="#FF8A1F" data-on="#012D74" data-tint="rgba(1,45,116,.45)" data-title="Gomes da Costa · Sofia Mara" hidden><main class="view-main"><div class="wrap"><div class="ch"><div class="row"><div><span class="lab" data-rv>Case · E-commerce · 2024</span><h1 class="d" data-rv>Gomes da Costa</h1><p class="sm" data-rv>Projeto de UX/UI para organizar a experiência de compra, facilitando a descoberta de produtos e a navegação até a decisão de compra.</p>
+<div class="bts" style="justify-content:flex-start;margin:0" data-rv><a class="btn p" href="https://www.behance.net/gallery/209493775/E-commerce-Gomes-da-Costa-UIUX-Design" target="_blank" rel="noopener noreferrer">Ver no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<dl class="meta" data-rv><div><dt>Ano</dt><dd>2024</dd></div><div><dt>Papel</dt><dd>UX/UI Design</dd></div><div><dt>Contexto</dt><dd>Social Unlimited</dd></div><div><dt>Segmento</dt><dd>E-commerce</dd></div></dl></div>
+<div class="cover" data-rv><img src="assets/capas/gdc.jpg" alt="Capa do projeto Gomes da Costa"></div></div>
+<div class="sec" data-rv><div><span class="lab">Foco</span><h2>No que me concentrei</h2></div><ul class="foc"><li><em>01</em><b>Navegação</b>Caminhos claros entre categorias e produtos.</li><li><em>02</em><b>Organização de conteúdo</b>Informação estruturada para facilitar a escolha.</li><li><em>03</em><b>Jornada de compra</b>Da descoberta do produto até a decisão de compra.</li></ul></div>
+<div class="sec car" data-rv><div class="chd"><div><span class="lab">Detalhes</span><h2>Um olhar de perto</h2></div><div class="arr"><button type="button" class="pv" aria-label="Anterior">&#8592;</button><button type="button" class="nx2" aria-label="Próximo">&#8594;</button></div></div><div class="trk"><figure><img src="assets/capas/gdc.jpg" alt="Gomes da Costa, imagem 1" loading="lazy"></figure><figure><img src="assets/capas/d-gdc-2.jpg" alt="Gomes da Costa, imagem 2" loading="lazy"></figure><figure><img src="assets/capas/d-gdc-3.jpg" alt="Gomes da Costa, imagem 3" loading="lazy"></figure><figure><img src="assets/capas/d-gdc-5.jpg" alt="Gomes da Costa, imagem 4" loading="lazy"></figure><figure><img src="assets/capas/d-gdc-6.jpg" alt="Gomes da Costa, imagem 5" loading="lazy"></figure><a class="mais" href="https://www.behance.net/gallery/209493775/E-commerce-Gomes-da-Costa-UIUX-Design" target="_blank" rel="noopener noreferrer"><span class="lab">Case completo</span><b>Ver todas as telas no Behance</b><i><i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></i></a></div><div class="dots"></div></div><div class="duo" data-rv><div class="gc"><span class="lab">Palavras-chave</span><h3>O projeto em poucas palavras</h3><ul class="pills"><li>Qualidade</li><li>Sabor</li><li>Confiança</li><li>2024</li><li>Usabilidade</li></ul></div><div class="gc"><span class="lab">Ferramentas</span><h3>Projeto realizado com</h3><ul class="pills"><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Teams</li></ul><p class="by">Desenvolvido por <b>Social Unlimited Digital Commerce</b></p></div></div>
+<div class="cta2" data-rv><span class="lab">Case completo</span><h2>Veja o processo e as telas</h2><p>O projeto inteiro, com telas e detalhes, está no meu Behance.</p><div class="bts"><a class="btn p" href="https://www.behance.net/gallery/209493775/E-commerce-Gomes-da-Costa-UIUX-Design" target="_blank" rel="noopener noreferrer">Abrir no Behance <i><svg class="ai" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg></i></a></div></div>
+<div class="nx" data-rv><a href="#/ajx-capital"><small>← Anterior</small><b>AJX Capital</b></a><a class="r" href="#/garagem-010"><small>Próximo →</small><b>Garagem 010</b></a></div>
+</div></main></div>
+<footer>© 2026 Sofia Mara · São Paulo, Brasil</footer><script src="assets/app.js"></script></body></html>
