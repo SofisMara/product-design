@@ -153,3 +153,9 @@
 .mix .xp.tabs .xp-i.on{padding:22px 0 0!important;border:0!important;margin:0!important}
 .mix .xp-b ul{max-width:900px}
 @media(max-width:900px){.mix .xp-tl{display:flex!important;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 -16px!important;padding:0 16px 14px!important}.mix .xp-tl button{flex:0 0 auto;min-width:150px;scroll-snap-align:start}}
+/* fatos: cartões 3x2 (opção B aprovada) */
+#sobre .topics{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:12px!important;margin:26px 0 0!important;padding:0!important;border:0!important;clear:both}
+#sobre .topics li{display:grid!important;grid-template-columns:1fr!important;gap:6px!important;align-content:start!important;padding:16px 18px!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:18px!important;background:rgba(255,255,255,.04)!important;font-size:16px;line-height:1.5;max-width:none}
+#sobre .topics li b{font-size:11px!important;letter-spacing:.14em;color:var(--rose)}
+@media(max-width:760px){#sobre .topics{grid-template-columns:1fr 1fr!important}}
+@media(max-width:480px){#sobre .topics{grid-template-columns:1fr!important}}
