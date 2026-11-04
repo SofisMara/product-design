@@ -81,3 +81,39 @@
 .mix .xp-c{margin:0}
 #sobre .xp-cv{margin-top:26px}
 @media(max-width:560px){.mix-tabs button{padding:10px 16px;font-size:14px}}
+/* 1 abas principais em sublinhado; prática e método sem segunda fileira de abas */
+.mix-tabs{gap:28px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:26px}
+.mix-tabs button{border:0;border-radius:0;padding:0 2px 14px;font-size:17px;color:#b79aa4;background:none;position:relative}
+.mix-tabs button:hover{background:none;color:var(--ink)}
+.mix-tabs button[aria-selected=true]{background:none;color:var(--ink);border:0}
+.mix-tabs button[aria-selected=true]:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--rose);border-radius:2px}
+.mix .tools2 .seg{display:none}
+.mix .tools2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mix .tools2 .sp{display:block!important;margin:0;padding:22px 24px;border-radius:22px}
+.mix .sp h4{font:600 12px "DM Sans";letter-spacing:.12em;text-transform:uppercase;color:var(--rose);margin:0 0 8px}
+.mix .sp .bs{font-size:15px;margin-bottom:14px}
+.mix .sp .pills li{font-size:14px;padding:6px 14px}
+@media(max-width:700px){.mix .tools2{grid-template-columns:1fr}.mix-tabs{gap:18px;overflow-x:auto;scrollbar-width:none}.mix-tabs button{white-space:nowrap;font-size:15px}}
+/* 2 experiência: divisória e mais compacta */
+.mix .xp.tabs{grid-template-columns:240px 1fr;gap:0;margin-top:8px}
+.mix .xp-tl{gap:2px;padding-right:22px;border-right:1px solid rgba(255,255,255,.1)}
+.mix .xp-tl button{padding:10px 14px;border-radius:12px}
+.mix .xp.tabs .xp-i.on{padding:0 0 0 30px}
+.mix .xp-b h3{font-size:22px}
+.mix .xp-b small{margin:4px 0 10px}
+.mix .xp-b ul{gap:8px}
+.mix .xp-b li{line-height:1.5}
+.mix-lead{margin-bottom:14px}
+@media(max-width:900px){.mix .xp.tabs{grid-template-columns:1fr}.mix .xp-tl{border-right:0;padding-right:0}.mix .xp.tabs .xp-i.on{padding:18px 0 0;border-top:1px solid rgba(255,255,255,.1);margin-top:6px}}
+/* 3 etapas como linha do tempo, separadas dos fatos */
+#sobre .how.how-w{margin:34px 0 0!important;padding:0 0 26px!important;border-bottom:1px solid rgba(255,255,255,.12)!important;position:relative}
+#sobre .how.how-w li:before{content:"";flex:0 0 9px;height:9px;border-radius:50%;background:var(--rose);margin-right:12px;align-self:center}
+#sobre .how.how-w li+li:before{display:block;width:9px;flex:0 0 9px;height:9px;background:var(--rose);margin-right:12px}
+#sobre .how.how-w li+li{position:relative}
+#sobre .topics{margin-top:26px!important}
+#sobre .topics li{border-top:0!important;grid-template-columns:1fr!important;gap:4px!important;padding:12px 0!important}
+#sobre .topics li b{display:block}
+@media(max-width:900px){#sobre .how.how-w{padding-bottom:18px!important}}
+#sobre .how.how-w li:before,#sobre .how.how-w li+li:before{content:""!important;display:block!important;flex:0 0 9px!important;width:9px!important;height:9px!important;border-radius:50%!important;background:var(--rose)!important;margin:0 12px 0 0!important;align-self:center!important}
+@media(max-width:900px){#sobre .how.how-w li+li:before{display:block!important}}
+#sobre .topics li{align-content:start!important}
