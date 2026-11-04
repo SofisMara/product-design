@@ -141,3 +141,18 @@
 #sobre .topics li{font-size:16px;line-height:1.5;color:var(--ink)}
 @media(max-width:900px){#sobre .topics{grid-template-columns:1fr 1fr!important;gap:22px 24px!important}}
 @media(max-width:520px){#sobre .topics{grid-template-columns:1fr!important;gap:18px!important}#sobre .topics li{grid-template-columns:1fr!important}}
+/* seta do hero vira "Sobre mim" */
+.down{width:auto!important;height:auto!important;border-radius:999px!important;padding:12px 20px 12px 24px;gap:12px;display:inline-flex!important;align-items:center;font-size:15px;font-weight:500;color:var(--ink)}
+.down svg{width:18px;height:18px;color:var(--rose)}
+/* fatos em etiquetas */
+#sobre .topics{display:flex!important;flex-wrap:wrap;gap:10px!important;border-top:0!important;padding:0!important;margin:28px 0 0!important}
+#sobre .topics li{display:inline-flex!important;grid-template-columns:none!important;align-items:baseline!important;gap:12px!important;padding:10px 18px!important;border:1px solid rgba(255,255,255,.1)!important;border-radius:18px!important;background:rgba(255,255,255,.03)!important;font-size:15px;line-height:1.45;max-width:100%}
+#sobre .topics li b{font-size:11px!important;letter-spacing:.14em;color:var(--rose);white-space:nowrap}
+/* experiência: abas em linha no topo (desktop e celular) */
+.mix .xp.tabs{display:block!important;margin-top:6px}
+.mix .xp-tl{position:static!important;display:grid!important;grid-template-columns:repeat(5,1fr);gap:8px;border-right:0!important;padding:0 0 18px!important;margin:0!important;overflow:visible;border-bottom:1px solid rgba(255,255,255,.1)}
+.mix .xp-tl button{padding:12px 14px!important;border:1px solid rgba(255,255,255,.08)!important;border-radius:14px!important;min-width:0}
+.mix .xp-tl button[aria-selected=true]{border-color:rgba(242,184,198,.4)!important}
+.mix .xp.tabs .xp-i.on{padding:22px 0 0!important;border:0!important;margin:0!important}
+.mix .xp-b ul{max-width:900px}
+@media(max-width:900px){.mix .xp-tl{display:flex!important;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;margin:0 -16px!important;padding:0 16px 14px!important}.mix .xp-tl button{flex:0 0 auto;min-width:150px;scroll-snap-align:start}}
