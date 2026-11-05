@@ -162,9 +162,9 @@
 /* experiência refinada: trilho à esquerda + ficha e texto + paginação fixa embaixo */
 .xq{display:grid;grid-template-columns:250px 1fr;gap:0 34px;margin-top:10px;align-items:stretch}
 .xq-tl{position:relative;display:grid;align-content:start;gap:4px;padding:6px 0 6px 24px;border-right:1px solid rgba(255,255,255,.09)}
-.xq-tl:before{content:"";position:absolute;left:5px;top:26px;bottom:34px;width:1px;background:rgba(242,184,198,.3)}
+.xq-tl:before{content:"";position:absolute;left:6px;top:26px;bottom:34px;width:1px;background:rgba(242,184,198,.3)}
 .xq-tl button{all:unset;box-sizing:border-box;position:relative;display:grid;gap:2px;padding:12px 14px;cursor:pointer;border-radius:12px;transition:background .3s}
-.xq-tl button:before{content:"";position:absolute;left:-24px;top:19px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid rgba(242,184,198,.55);transition:background .3s,border-color .3s}
+.xq-tl button:before{content:"";position:absolute;box-sizing:border-box;left:-24px;top:19px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid rgba(242,184,198,.55);transition:background .3s,border-color .3s}
 .xq-tl button.on:before{background:var(--rose);border-color:var(--rose)}
 .xq-tl small{font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--mute)}
 .xq-tl b{font-size:16px;font-weight:600;color:var(--mute);transition:color .3s}
@@ -189,3 +189,13 @@
 .xq-pg button:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
 @media(max-width:900px){.xq{grid-template-columns:1fr}.xq-tl{display:flex;overflow-x:auto;padding:0 0 10px;border-right:0;border-bottom:1px solid rgba(255,255,255,.09);margin-bottom:20px;scrollbar-width:none}.xq-tl:before,.xq-tl button:before{display:none}.xq-tl button{flex:0 0 auto;border:1px solid rgba(255,255,255,.09)}.xq-tl button.on{border-color:rgba(242,184,198,.45);background:rgba(242,184,198,.08)}}
 @media(max-width:640px){.xq-two{grid-template-columns:1fr}.xq-fc{border-right:0;padding:0 0 16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.09);grid-template-columns:1fr 1fr}.xq-pane h3{font-size:26px}}
+
+/* ficha em faixa + blocos agrupados */
+.xq-fc{display:flex;flex-wrap:wrap;gap:12px 36px;align-content:start;border:0;padding:14px 20px;margin:0 0 18px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
+.xq-fc>div{min-width:0}
+.xq-fc small{margin-bottom:2px}
+.xq-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;max-width:none}
+.xq-card{padding:2px 0 0 16px;border-left:2px solid rgba(242,184,198,.45)}
+.xq-card h4{margin:0 0 6px;font-size:15px;font-weight:600;color:var(--rose);letter-spacing:.01em}
+.xq-card p{margin:0;font-size:15px;line-height:1.55;color:var(--ink);opacity:.88}
+@media(max-width:640px){.xq-fc{display:grid;grid-template-columns:1fr 1fr;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:16px}.xq-cards{grid-template-columns:1fr}}
