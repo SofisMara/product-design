@@ -205,3 +205,5 @@
 @media (min-width:901px){#sobre .ab>div:first-child>p{max-width:600px!important}#sobre .ab>div:first-child>p+p{margin-top:12px}#sobre .ab .pt{width:340px!important}}
 @media (min-width:901px){#sobre .ab>div:first-child>p{max-width:650px!important}#sobre .ab .pt{width:360px!important;margin:0 clamp(0px,5vw,72px) 20px 0!important}}
 @media (min-width:901px){#sobre .ab>div:first-child{max-width:1090px}#sobre .ab .pt{margin-right:0!important}}
+@media (min-width:901px){#sobre .ab>div:first-child{display:grid!important;grid-template-columns:minmax(0,650px) 360px;column-gap:80px;align-items:start}#sobre .ab>div:first-child>*{grid-column:1}#sobre .ab>div:first-child>.pt{grid-column:2!important;grid-row:1/span 12;align-self:center!important;float:none!important;margin:0!important}}
+@media (min-width:901px){#sobre .ab>div:first-child{grid-template-columns:minmax(0,650px) minmax(0,360px);column-gap:clamp(32px,5vw,80px)}#sobre .ab>div:first-child>.pt{width:100%!important;max-width:none!important;justify-self:stretch;aspect-ratio:1/1.02!important}}
