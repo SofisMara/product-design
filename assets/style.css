@@ -204,3 +204,4 @@
 /* Sobre: texto em bloco compacto ao lado da foto */
 @media (min-width:901px){#sobre .ab>div:first-child>p{max-width:600px!important}#sobre .ab>div:first-child>p+p{margin-top:12px}#sobre .ab .pt{width:340px!important}}
 @media (min-width:901px){#sobre .ab>div:first-child>p{max-width:650px!important}#sobre .ab .pt{width:360px!important;margin:0 clamp(0px,5vw,72px) 20px 0!important}}
+@media (min-width:901px){#sobre .ab>div:first-child{max-width:1090px}#sobre .ab .pt{margin-right:0!important}}
