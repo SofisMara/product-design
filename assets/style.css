@@ -199,3 +199,5 @@
 .xq-card h4{margin:0 0 6px;font-size:15px;font-weight:600;color:var(--rose);letter-spacing:.01em}
 .xq-card p{margin:0;font-size:15px;line-height:1.55;color:var(--ink);opacity:.88}
 @media(max-width:640px){.xq-fc{display:grid;grid-template-columns:1fr 1fr;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:16px}.xq-cards{grid-template-columns:1fr}}
+/* trilho: sem divisória lateral, só a linha de pontos */
+.xq-tl{border-right:0}
